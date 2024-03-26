@@ -1,5 +1,5 @@
 package racingcar
 
 fun main() {
-    print('hi')
+    print("hi")
 }
