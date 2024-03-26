@@ -10,9 +10,8 @@ fun main() {
     println("시도할 횟수는 몇 회인가요?")
     val times = input.nextInt()
     val cars = name.map { Car(it) }
-    val carsPosition = cars.map { it.position }
 
-    while(!carsPosition.contains(times)){
+    repeat(times){
         randomMove(cars)
     }
 
@@ -24,6 +23,7 @@ fun randomMove(cars : List<Car>) {
     val random = Random().nextInt(10)
     for (car in cars) {
         car.move(random)
+        println(car)
     }
 
 }
