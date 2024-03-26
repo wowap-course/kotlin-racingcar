@@ -7,4 +7,5 @@ fun main() {
     repeat(car.position) {
         println("-")
     }
+    // 앙아아아
 }
