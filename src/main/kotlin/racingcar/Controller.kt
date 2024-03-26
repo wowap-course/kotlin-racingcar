@@ -10,20 +10,20 @@ fun main() {
     println("시도할 횟수는 몇 회인가요?")
     val times = input.nextInt()
     val cars = name.map { Car(it) }
+    val random = Random()
 
     repeat(times){
-        randomMove(cars)
+        randomMove(cars, random)
     }
 
     val winners = cars.filter { it.position == times }.map { it.name }
     println("최종 우승자: $winners")
 }
 
-fun randomMove(cars : List<Car>) {
-    val random = Random().nextInt(10)
-    for (car in cars) {
-        car.move(random)
-        println(car)
+fun randomMove(cars : List<Car>, random: Random) {
+    cars.forEach {
+        it.move(random.nextInt(10))
+        println(it)
     }
 
 }
