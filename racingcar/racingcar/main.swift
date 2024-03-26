@@ -13,6 +13,8 @@ func main(){
     print("시도할 횟수는 몇회인가요?")
     let count = Int(readLine()!)!
 
+    act(count: count, cars: cars)
+    win(cars: cars)
 }
 
 func inputData() -> [Car]{

@@ -23,7 +23,8 @@ func win(cars : [Car]){
     print("최종 우승자: ", terminator: "")
     for car in cars{
         if car.isWinner(winnerPosition: maxPosition) {
-            print(car.name, terminator: "")
+            print(car.name, terminator: " ")
         }
     }
+    print()
 }
