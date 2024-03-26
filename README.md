@@ -1,1 +1,6 @@
-# kotlin-racingcar
+#  Swift-racingcar
+
+## 미션 요구사항
+
+- [ ] 자동차는 ","를 기준으로 각자의 이름을 가진다.
+- [ ]   
