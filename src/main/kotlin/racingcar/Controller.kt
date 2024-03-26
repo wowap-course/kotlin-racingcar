@@ -12,9 +12,12 @@ fun main() {
     val cars = name.map { Car(it) }
     val carsPosition = cars.map { it.position }
 
-    while(carsPosition.contains(times)){
+    while(!carsPosition.contains(times)){
         randomMove(cars)
     }
+
+    val winners = cars.filter { it.position == times }.map { it.name }
+    println("최종 우승자: $winners")
 }
 
 fun randomMove(cars : List<Car>) {
@@ -22,4 +25,5 @@ fun randomMove(cars : List<Car>) {
     for (car in cars) {
         car.move(random)
     }
+
 }
