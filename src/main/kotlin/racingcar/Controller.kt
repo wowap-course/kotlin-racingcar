@@ -1,5 +1,6 @@
 package racingcar
 
+import java.util.Random
 import java.util.Scanner
 
 fun main() {
@@ -8,5 +9,10 @@ fun main() {
     val name = input.nextLine().split(',')
     println("시도할 횟수는 몇 회인가요?")
     val times = input.nextInt()
+    val cars = name.map { Car(it) }
 
+    val random = Random().nextInt(10)
+    for (car in cars) {
+        car.move(random)
+    }
 }
