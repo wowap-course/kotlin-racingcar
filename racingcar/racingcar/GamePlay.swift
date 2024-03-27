@@ -24,11 +24,6 @@ func moveCars(cars: [Car]){
 
 func findWinners(cars : [Car]){
     let maxPosition = cars.map { $0.position }.max() ?? 0
-    print("최종 우승자: ", terminator: "")
-    for car in cars{
-        if car.isWinner(winnerPosition: maxPosition) {
-            print(car.name, terminator: " ")
-        }
-    }
-    print()
+    let winners = cars.filter { $0.position >= maxPosition }
+    print("최종 우승자:", winners.map { $0.name }.joined(separator: ", "))
 }

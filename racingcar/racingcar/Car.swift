@@ -22,7 +22,4 @@ class Car{
         }
     }
     
-    func isWinner(winnerPosition: Int) -> Bool{
-        return self.position == winnerPosition
-    }
 }
