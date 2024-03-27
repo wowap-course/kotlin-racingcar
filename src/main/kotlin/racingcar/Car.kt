@@ -3,7 +3,12 @@ package racingcar
 import kotlin.random.Random
 
 class Car(val name: String) {
+
     var position = 0
+
+    init {
+        if(name.length > 5) throw IllegalArgumentException()
+    }
 
     // 자동차 끼리의 위치를 정해주는 변수 position
     fun move() {
