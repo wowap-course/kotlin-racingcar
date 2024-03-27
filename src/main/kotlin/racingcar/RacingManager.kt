@@ -4,16 +4,17 @@ class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = 0
     private var winnerCars = mutableListOf<Car>()
+    private val printer = Printer()
 
     fun gameStart() {
-        printInsertCarNameCommand()
+        printer.printInsertCarNameCommand()
         inputCarName()
-        printInsertRepeatTime()
+        printer.printInsertRepeatTimeCommand()
         inputRepeatTime()
     }
 
     fun gameRun() {
-        printResultCommand()
+        printer.printResultCommand()
         for (i in 1..repeatTime) {
             racingOperation()
             printOperateResult()
@@ -23,14 +24,11 @@ class RacingManager {
 
     fun printWinner() {
         setWinner()
-        print("최종 우승자: ")
+        printer.printFinalWinnerCommand()
         val winnerNames = winnerCars.joinToString(", ") { it.getName() }
-        print(winnerNames)
+        printer.printWinnerName(winnerNames)
     }
 
-    private fun printResultCommand() {
-        println("\n실행 결과")
-    }
 
     private fun racingOperation() {
         for (car in racingCars) {
@@ -42,14 +40,10 @@ class RacingManager {
 
     private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= 4
 
-    private fun randomNumberCreate() = (0..9).random()
-
-    private fun printInsertCarNameCommand() {
-        println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
-    }
+    private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
     private fun inputCarName(){
-        val inputCarName: List<String> = readLine()!!.split(",")
+        val inputCarName: List<String> = readLine()!!.split(COMMA_DELIMITERS)
         for (name in inputCarName) {
             racingCars.add(createNewCar(name))
         }
@@ -57,19 +51,15 @@ class RacingManager {
 
     private fun createNewCar(name: String) = Car(name)
 
-    private fun printInsertRepeatTime() {
-        println("시도할 횟수는 몇 회인가요?")
-    }
-
     private fun inputRepeatTime() {
         repeatTime = readLine()!!.toInt()
     }
 
     private fun printOperateResult() {
         for (car in racingCars) {
-            print("${car.getName()} : ")
+            printer.printCarName(car)
             repeat(car.getDistance()) {
-                print("-")
+                printer.printDash()
             }
             println()
         }
