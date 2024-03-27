@@ -15,7 +15,7 @@ class RacingManager {
         printResultCommand()
         for (i in 1..repeatTime) {
             racingOperation()
-
+            printOperateResult()
         }
     }
 
@@ -59,4 +59,13 @@ class RacingManager {
     }
 
     private fun inputRepeatTime(): Int = readLine()!!.toInt()
+
+    private fun printOperateResult() {
+        for(car in racingCars) {
+            print("${car.getName()} : ")
+            repeat(car.getDistance()) {
+                print("-")
+            }
+        }
+    }
 }
