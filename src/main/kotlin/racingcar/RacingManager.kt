@@ -32,12 +32,6 @@ class RacingManager {
         println("\n실행 결과")
     }
 
-    fun printWinner() {
-        print("최종 우승자: ")
-        val winnerNames = winnerCars.joinToString(", ") { it.getName() }
-        print(winnerNames)
-    }
-
     private fun racingOperation() {
         for (car in racingCars) {
             if (randomNumberOverFour()) {
@@ -69,7 +63,9 @@ class RacingManager {
         println("시도할 횟수는 몇 회인가요?")
     }
 
-    private fun inputRepeatTime(): Int = readLine()!!.toInt()
+    private fun inputRepeatTime() {
+        repeatTime = readLine()!!.toInt()
+    }
 
     private fun printOperateResult() {
         for (car in racingCars) {
