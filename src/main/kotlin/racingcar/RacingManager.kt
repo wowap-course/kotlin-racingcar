@@ -49,16 +49,25 @@ class RacingManager {
     private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
     private fun inputCarName(){
-        val inputCarName: List<String> = readLine()!!.split(COMMA_DELIMITERS)
-        for (name in inputCarName) {
-            racingCars.add(createNewCar(name))
+//        throw 조건 강화
+        try {
+            val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
+            for (name in inputCarName) {
+                racingCars.add(createNewCar(name))
+            }
+        } catch (e: Exception) {
+            throw IllegalArgumentException("잘못된 입력")
         }
     }
 
     private fun createNewCar(name: String) = Car(name)
 
     private fun inputRepeatTime() {
-        repeatTime = readLine()!!.toInt()
+        try {
+            repeatTime = readln().toInt()
+        } catch (e: Exception) {
+            throw IllegalArgumentException("잘못된 입력")
+        }
     }
 
     private fun printOperateResult() {
