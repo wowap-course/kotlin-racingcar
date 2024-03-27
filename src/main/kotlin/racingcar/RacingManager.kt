@@ -19,6 +19,10 @@ class RacingManager {
         }
     }
 
+    private fun printResultCommand() {
+        println("\n실행 결과")
+    }
+
     fun printWinner() {
         print("최종 우승자: ")
     }
