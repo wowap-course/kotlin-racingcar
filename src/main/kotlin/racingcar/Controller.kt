@@ -19,7 +19,8 @@ fun main() {
         randomMove(cars, random)
     }
 
-    val winners = cars.filter { it.position == times }.map { it.name }
+    val maxPosition = cars.maxOf {it.position}
+    val winners = cars.filter { it.position == maxPosition }.map { it.name }
     println("최종 우승자: $winners")
 }
 
@@ -28,5 +29,5 @@ fun randomMove(cars : List<Car>, random: Random) {
         it.move(random.nextInt(10))
         println(it)
     }
-
+    println()
 }
