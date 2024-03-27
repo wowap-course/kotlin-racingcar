@@ -29,7 +29,7 @@ class RacingManager {
 
     private fun racingOperation() {
         for (car in racingCars) {
-            if(randomNumberOverFour()) {
+            if (randomNumberOverFour()) {
                 car.moveForward()
             }
         }
@@ -61,7 +61,7 @@ class RacingManager {
     private fun inputRepeatTime(): Int = readLine()!!.toInt()
 
     private fun printOperateResult() {
-        for(car in racingCars) {
+        for (car in racingCars) {
             print("${car.getName()} : ")
             repeat(car.getDistance()) {
                 print("-")
