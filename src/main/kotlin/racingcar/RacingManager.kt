@@ -71,6 +71,7 @@ class RacingManager {
             repeat(car.getDistance()) {
                 print("-")
             }
+            println()
         }
     }
 
