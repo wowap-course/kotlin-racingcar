@@ -3,6 +3,7 @@ package racingcar
 class RacingManager {
     private val repeatTime: Int by lazy { inputRepeatTime() }
     private val racingCars: MutableList<Car> by lazy { inputCarName() }
+    private var winnerCars = mutableListOf<Car>()
 
     fun gameStart() {
         printInsertCarNameCommand()
@@ -25,6 +26,8 @@ class RacingManager {
 
     fun printWinner() {
         print("최종 우승자: ")
+        val winnerNames = winnerCars.joinToString(", ") { it.getName() }
+        print(winnerNames)
     }
 
     private fun racingOperation() {
@@ -65,6 +68,16 @@ class RacingManager {
             print("${car.getName()} : ")
             repeat(car.getDistance()) {
                 print("-")
+            }
+        }
+    }
+
+    private fun setWinner() {
+        val maxDistance = racingCars.maxOfOrNull { it.getDistance() }
+
+        for (car in racingCars) {
+            if (car.getDistance() == maxDistance) {
+                winnerCars.add(car)
             }
         }
     }
