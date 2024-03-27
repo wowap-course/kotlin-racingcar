@@ -6,4 +6,7 @@ class Car(val name: String) {
     fun moveForward() {
         distance++
     }
+
+    fun getName() = name
+    fun getDistance() = distance
 }
