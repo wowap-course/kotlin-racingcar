@@ -26,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		1280034A2BB32D8E00A9436B /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
-		1280034C2BB3302400A9436B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		12ED77AD2BB2F45D00CAFF16 /* racingcar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = racingcar; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ED77B02BB2F45D00CAFF16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		12ED77B72BB2F4AC00CAFF16 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -46,7 +45,6 @@
 		12ED77A42BB2F45D00CAFF16 = {
 			isa = PBXGroup;
 			children = (
-				1280034C2BB3302400A9436B /* README.md */,
 				12ED77AF2BB2F45D00CAFF16 /* racingcar */,
 				12ED77AE2BB2F45D00CAFF16 /* Products */,
 			);

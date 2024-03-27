@@ -7,18 +7,22 @@
 
 import Foundation
 
-func act(count: Int, cars: [Car]){
+func goRacing(count: Int, cars: [Car]){
     for _ in 0..<count{
-        for car in cars{
-            car.go()
-            let dashes = String(repeating: "-", count: car.position)
-            print("\(car.name) : \(dashes)")
-        }
-        print()
+        moveCars(cars: cars)
     }
 }
 
-func win(cars : [Car]){
+func moveCars(cars: [Car]){
+    for car in cars{
+        car.go()
+        let dashes = String(repeating: "-", count: car.position)
+        print("\(car.name) : \(dashes)")
+    }
+    print()
+}
+
+func findWinners(cars : [Car]){
     let maxPosition = cars.map { $0.position }.max() ?? 0
     print("최종 우승자: ", terminator: "")
     for car in cars{
