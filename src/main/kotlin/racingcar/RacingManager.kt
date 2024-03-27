@@ -1,8 +1,8 @@
 package racingcar
 
 class RacingManager {
-    private val repeatTime: Int by lazy { inputRepeatTime() }
-    private val racingCars: MutableList<Car> by lazy { inputCarName() }
+    private val racingCars = mutableListOf<Car>()
+    private var repeatTime: Int = 0
     private var winnerCars = mutableListOf<Car>()
 
     fun gameStart() {
