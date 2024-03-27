@@ -57,4 +57,6 @@ class RacingManager {
     private fun printInsertRepeatTime() {
         println("시도할 횟수는 몇 회인가요?")
     }
+
+    private fun inputRepeatTime(): Int = readLine()!!.toInt()
 }
