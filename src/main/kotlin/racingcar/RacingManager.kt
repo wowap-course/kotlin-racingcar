@@ -35,6 +35,10 @@ class RacingManager {
         }
     }
 
+    private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= 4
+
+    private fun randomNumberCreate() = (0..9).random()
+
     private fun printInsertCarNameCommand() {
         println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
     }
