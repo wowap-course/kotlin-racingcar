@@ -1,5 +1,10 @@
 package racingcar
 
+const val MIN_VALUE_OF_RANDOM_NUMBER = 0
+const val MAX_VALUE_OF_RANDOM_NUMBER = 9
+const val COMMA_DELIMITERS = ","
+const val STANDARD_NUMBER = 4
+
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = 0
