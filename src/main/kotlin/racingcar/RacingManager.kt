@@ -17,7 +17,15 @@ class RacingManager {
         for (i in 1..repeatTime) {
             racingOperation()
             printOperateResult()
+            println()
         }
+    }
+
+    fun printWinner() {
+        setWinner()
+        print("최종 우승자: ")
+        val winnerNames = winnerCars.joinToString(", ") { it.getName() }
+        print(winnerNames)
     }
 
     private fun printResultCommand() {
