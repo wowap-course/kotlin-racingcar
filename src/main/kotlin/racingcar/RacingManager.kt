@@ -52,6 +52,8 @@ class RacingManager {
         return cars
     }
 
+    private fun createNewCar(name: String) = Car(name)
+
     private fun printInsertRepeatTime() {
         println("시도할 횟수는 몇 회인가요?")
     }
