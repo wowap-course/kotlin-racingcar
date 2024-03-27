@@ -19,10 +19,8 @@ fun main() {
             val winners = getWinners(cars)
             println("최종 우승자는 ${winners.joinToString(", ")} 입니다!")
         } else {
-            println("올바른 시도 횟수를 입력하세요.")
+            throw IllegalArgumentException("올바른 횟수를 입력하시오.")
         }
-    } else {
-        println("자동차 이름을 입력하시오.")
     }
 }
 
@@ -31,7 +29,7 @@ class Car(val name: String) {
     var position: Int = 0
 
     fun move() {
-        val randomNumber = rand(1, 10)
+        val randomNumber = rand(0, 10)
         if (randomNumber >= 4) {
             position++
         }
@@ -43,6 +41,9 @@ fun createCars(input: String): List<Car> {
 
     val cars = mutableListOf<Car>()
     for (name in inputNames) {
+        if(name.length>5) {
+            throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.")
+        }
         cars.add(Car(name))
     }
 
