@@ -1,13 +1,14 @@
 package racingcar
 
+const val INIT_NUMBER = 0
 const val MIN_VALUE_OF_RANDOM_NUMBER = 0
 const val MAX_VALUE_OF_RANDOM_NUMBER = 9
 const val COMMA_DELIMITERS = ","
-const val STANDARD_NUMBER = 4
+const val VALIDATE_RANDOM_NUMBER = 4
 
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
-    private var repeatTime: Int = 0
+    private var repeatTime: Int = INIT_NUMBER
     private var winnerCars = mutableListOf<Car>()
     private val printer = Printer()
 
@@ -43,7 +44,7 @@ class RacingManager {
         }
     }
 
-    private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= 4
+    private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= VALIDATE_RANDOM_NUMBER
 
     private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
