@@ -48,13 +48,11 @@ class RacingManager {
         println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
     }
 
-    private fun inputCarName(): MutableList<Car> {
-        val inputCarName: List<String> = readln().split(",")
-        val cars: MutableList<Car> = mutableListOf()
+    private fun inputCarName(){
+        val inputCarName: List<String> = readLine()!!.split(",")
         for (name in inputCarName) {
-            cars.add(createNewCar(name))
+            racingCars.add(createNewCar(name))
         }
-        return cars
     }
 
     private fun createNewCar(name: String) = Car(name)
