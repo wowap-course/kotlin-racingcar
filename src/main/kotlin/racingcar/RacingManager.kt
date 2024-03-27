@@ -1,7 +1,17 @@
 package racingcar
 
 class RacingManager {
-    fun printInsertCarNameCommand() {
+    private val repeatTime: Int by lazy { inputRepeatTime() }
+    private val racingCars: MutableList<Car> by lazy { inputCarName() }
+
+    fun gameStart() {
+        printInsertCarNameCommand()
+        inputCarName()
+        printInsertRepeatTime()
+        inputRepeatTime()
+    }
+
+    private fun printInsertCarNameCommand() {
         println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
     }
 
