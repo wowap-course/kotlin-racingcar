@@ -1,15 +1,12 @@
 package racingcar
 
 fun main() {
-    try {
-        val names: List<String> = inputNames()
-        val repeatInput = roundCount()
-        val cars = createCars(names)
-        game(repeatInput, cars)
-        winner(cars)
-    } catch (e: IllegalArgumentException) {
-        println(e.message)
-    }
+    val names: List<String> = inputNames()
+    val cars = createCars(names)
+    val repeatInput = roundCount()
+    game(repeatInput, cars)
+    winner(cars)
+
 }
 
 fun game(repeatInput: Int, cars: List<Car>) {
