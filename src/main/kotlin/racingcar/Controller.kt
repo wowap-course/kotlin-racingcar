@@ -15,3 +15,12 @@ fun inputName(): List<String> {
     validCarName(carName)
     return carName
 }
+
+fun validCarName(carName: List<String>) {
+    if (carName.any { it.length > 5 }) throw IllegalArgumentException("이름이 5자를 초과합니다")
+}
+
+fun inputCount(): Int {
+    println("시도할 횟수는 몇 회인가요?")
+    return readlnOrNull()?.toIntOrNull() ?: throw IllegalArgumentException("error")
+}
