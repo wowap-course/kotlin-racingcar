@@ -6,14 +6,20 @@ class RacingManager {
     private val winnerCars = mutableListOf<Car>()
     private val printer = Printer()
 
-    fun gameStart() {
+    fun run() {
+        gameStart()
+        gameRun()
+        printWinner()
+    }
+
+    private fun gameStart() {
         printer.printInsertCarNameCommand()
         inputCarName()
         printer.printInsertRepeatTimeCommand()
         inputRepeatTime()
     }
 
-    fun gameRun() {
+    private fun gameRun() {
         printer.printResultCommand()
         for (i in START_OF_REPEAT..repeatTime) {
             decideGoOrNot()
@@ -22,7 +28,7 @@ class RacingManager {
         }
     }
 
-    fun printWinner() {
+    private fun printWinner() {
         setWinner()
         printer.printFinalWinnerCommand()
         val winnerNames = winnerCars.joinToString(", ") { it.name }
@@ -102,7 +108,6 @@ class RacingManager {
         const val MAX_VALUE_OF_RANDOM_NUMBER = 9
         const val COMMA_DELIMITERS = ","
         const val VALIDATE_RANDOM_NUMBER = 4
-        const val MAX_NAME_LENGTH = 5
         const val START_OF_REPEAT = 1
     }
 }
