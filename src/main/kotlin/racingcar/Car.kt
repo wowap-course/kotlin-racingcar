@@ -1,6 +1,8 @@
 package racingcar
 
-class Car(val name: String, var distance: Int) {
+class Car(val name: String, initDistance: Int) {
+    var distance: Int = initDistance
+        private set
 
     init {
 //        if(name.length > 5) throw IllegalArgumentException("")
