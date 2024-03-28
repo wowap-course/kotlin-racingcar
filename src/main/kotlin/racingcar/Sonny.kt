@@ -41,7 +41,7 @@ fun createCars(input: String): List<Car> {
 
     val cars = mutableListOf<Car>()
     for (name in inputNames) {
-        if(name.length>5) {
+        if(name.length>4) {
             throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.")
         }
         cars.add(Car(name))
