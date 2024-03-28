@@ -52,7 +52,7 @@ class RacingManager {
             val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
             for (name in inputCarName) {
                 checkBlank(name)
-                racingCars.add(createNewCar(name))
+                racingCars.add(Car(name, INIT_NUMBER))
             }
         } catch (e: Exception) {
             throw IllegalArgumentException("잘못된 입력")
@@ -64,8 +64,6 @@ class RacingManager {
             throw Exception()
         }
     }
-
-    private fun createNewCar(name: String) = Car(name, INIT_NUMBER)
 
     private fun inputRepeatTime() {
         try {
