@@ -5,6 +5,7 @@ const val MIN_VALUE_OF_RANDOM_NUMBER = 0
 const val MAX_VALUE_OF_RANDOM_NUMBER = 9
 const val COMMA_DELIMITERS = ","
 const val VALIDATE_RANDOM_NUMBER = 4
+const val MAX_NAME_LENGTH = 5
 
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
@@ -51,10 +52,24 @@ class RacingManager {
         try {
             val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
             for (name in inputCarName) {
+                checkNameLength(name)
+                checkBlank(name)
                 racingCars.add(createNewCar(name))
             }
         } catch (e: Exception) {
             throw IllegalArgumentException("잘못된 입력")
+        }
+    }
+
+    private fun checkNameLength(name: String) {
+        if(name.length >= MAX_NAME_LENGTH) {
+            throw Exception()
+        }
+    }
+
+    private fun checkBlank(name: String){
+        if(name.isBlank()) {
+            throw Exception()
         }
     }
 
