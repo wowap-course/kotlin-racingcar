@@ -62,13 +62,13 @@ class RacingManager {
     }
 
     private fun checkNameLength(name: String) {
-        if(name.length >= MAX_NAME_LENGTH) {
+        if (name.length >= MAX_NAME_LENGTH) {
             throw Exception()
         }
     }
 
-    private fun checkBlank(name: String){
-        if(name.isBlank()) {
+    private fun checkBlank(name: String) {
+        if (name.isBlank()) {
             throw Exception()
         }
     }
