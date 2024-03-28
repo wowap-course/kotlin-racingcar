@@ -22,8 +22,8 @@ class RacingManager {
     fun gameRun() {
         printer.printResultCommand()
         for (i in 1..repeatTime) {
-            racingOperation()
-            printOperateResult()
+            decideGoOrNot()
+            printRoundResult()
             println()
         }
     }
@@ -35,8 +35,7 @@ class RacingManager {
         printer.printWinnerName(winnerNames)
     }
 
-
-    private fun racingOperation() {
+    private fun decideGoOrNot() {
         for (car in racingCars) {
             if (randomNumberOverFour()) {
                 car.moveForward()
@@ -49,7 +48,6 @@ class RacingManager {
     private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
     private fun inputCarName(){
-//        throw 조건 강화
         try {
             val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
             for (name in inputCarName) {
@@ -70,7 +68,7 @@ class RacingManager {
         }
     }
 
-    private fun printOperateResult() {
+    private fun printRoundResult() {
         for (car in racingCars) {
             printer.printCarName(car)
             repeat(car.getDistance()) {
