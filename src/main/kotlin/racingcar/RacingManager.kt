@@ -49,7 +49,7 @@ class RacingManager {
 
     private fun inputCarName() {
         try {
-            val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
+            val inputCarName: List<String> = readln().split(INPUT_SEPARATER)
             for (name in inputCarName) {
                 checkBlank(name)
                 racingCars.add(Car(name, INIT_NUMBER))
@@ -97,7 +97,7 @@ class RacingManager {
         const val INIT_NUMBER = 0
         const val MIN_VALUE_OF_RANDOM_NUMBER = 0
         const val MAX_VALUE_OF_RANDOM_NUMBER = 9
-        const val COMMA_DELIMITERS = ","
+        const val INPUT_SEPARATER = ","
         const val VALIDATE_RANDOM_NUMBER = 4
         const val START_OF_REPEAT = 1
     }
