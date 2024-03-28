@@ -97,4 +97,12 @@ class RacingManager {
             }
         }
     }
+
+    companion object {
+        const val MIN_VALUE_OF_RANDOM_NUMBER = 0
+        const val MAX_VALUE_OF_RANDOM_NUMBER = 9
+        const val COMMA_DELIMITERS = ","
+        const val VALIDATE_RANDOM_NUMBER = 4
+        const val MAX_NAME_LENGTH = 5
+    }
 }
