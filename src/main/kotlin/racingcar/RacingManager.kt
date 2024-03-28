@@ -10,7 +10,7 @@ const val MAX_NAME_LENGTH = 5
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = INIT_NUMBER
-    private var winnerCars = mutableListOf<Car>()
+    private val winnerCars = mutableListOf<Car>()
     private val printer = Printer()
 
     fun gameStart() {
