@@ -29,7 +29,7 @@ class Car(val name: String) {
     var position: Int = 0
 
     fun move() {
-        val randomNumber = rand(0, 10)
+        val randomNumber = rand()
         if (randomNumber >= 4) {
             position++
         }
@@ -66,6 +66,6 @@ fun getWinners(cars: List<Car>): List<String> {
     return cars.filter { it.position == maxPosition }.map { it.name }
 }
 
-fun rand(from: Int, to: Int): Int {
-    return random.nextInt(to - from) + from
+fun rand(): Int {
+    return (0..9).random()
 }
