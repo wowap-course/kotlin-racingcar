@@ -32,7 +32,7 @@ fun readInput() : RaceInfo{
 fun randomMove(cars : List<Car>, random: Random) {
     cars.forEach {
         it.move(random.nextInt(10))
-        println(it)
+        println(it) //수정해야함 -> 객체의 프로퍼티를 만들어 사용해야할듯
     }
     println()
 }

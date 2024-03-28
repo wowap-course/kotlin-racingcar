@@ -10,4 +10,8 @@ class Car(input : String) {
     fun move(condition : Int) {
         if(condition > 3) position++
     }
+
+    fun getPosition() {
+        print("-".repeat(position))
+    }
 }
