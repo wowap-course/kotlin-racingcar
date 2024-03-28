@@ -3,7 +3,6 @@ package racingcar
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = INIT_NUMBER
-    private val winnerCars = mutableListOf<Car>()
     private val printer = Printer()
 
     fun run() {
@@ -29,9 +28,8 @@ class RacingManager {
     }
 
     private fun printWinner() {
-        setWinner()
         printer.printFinalWinnerCommand()
-        val winnerNames = winnerCars.joinToString(", ") { it.name }
+        val winnerNames = setWinner().joinToString(", ") { it.name }
         printer.printWinnerName(winnerNames)
     }
 
@@ -83,14 +81,17 @@ class RacingManager {
         }
     }
 
-    private fun setWinner() {
+    private fun setWinner() : MutableList<Car> {
         val maxDistance = racingCars.maxOfOrNull { it.distance }
+        val winnerCars = mutableListOf<Car>()
 
         for (car in racingCars) {
             if (car.distance == maxDistance) {
                 winnerCars.add(car)
             }
         }
+
+        return winnerCars
     }
 
     companion object {
