@@ -1,7 +1,5 @@
 package racingcar
 
-const val INIT_NUMBER = 0
-
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = INIT_NUMBER
@@ -17,7 +15,7 @@ class RacingManager {
 
     fun gameRun() {
         printer.printResultCommand()
-        for (i in 1..repeatTime) {
+        for (i in START_OF_REPEAT..repeatTime) {
             decideGoOrNot()
             printRoundResult()
             println()
@@ -68,7 +66,7 @@ class RacingManager {
         }
     }
 
-    private fun createNewCar(name: String) = Car(name)
+    private fun createNewCar(name: String) = Car(name, INIT_NUMBER)
 
     private fun inputRepeatTime() {
         try {
@@ -99,10 +97,12 @@ class RacingManager {
     }
 
     companion object {
+        const val INIT_NUMBER = 0
         const val MIN_VALUE_OF_RANDOM_NUMBER = 0
         const val MAX_VALUE_OF_RANDOM_NUMBER = 9
         const val COMMA_DELIMITERS = ","
         const val VALIDATE_RANDOM_NUMBER = 4
         const val MAX_NAME_LENGTH = 5
+        const val START_OF_REPEAT = 1
     }
 }
