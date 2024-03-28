@@ -24,3 +24,15 @@ fun inputCount(): Int {
     println("시도할 횟수는 몇 회인가요?")
     return readlnOrNull()?.toIntOrNull() ?: throw IllegalArgumentException("error")
 }
+
+fun raceStart(
+    count: Int,
+    carName: List<String>,
+    carPositions: Array<Int>,
+) {
+    repeat(count) {
+        moveCars(carName, carPositions)
+        printCarStatus(carName, carPositions)
+        println()
+    }
+}
