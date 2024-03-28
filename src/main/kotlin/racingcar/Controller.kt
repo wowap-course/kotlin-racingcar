@@ -36,3 +36,14 @@ fun raceStart(
         println()
     }
 }
+
+fun moveCars(
+    carName: List<String>,
+    carPositions: Array<Int>,
+) {
+    carName.forEachIndexed { index, _ ->
+        if ((0..9).random() >= 4) {
+            carPositions[index]++
+        }
+    }
+}
