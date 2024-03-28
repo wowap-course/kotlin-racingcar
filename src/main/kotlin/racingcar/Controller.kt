@@ -47,3 +47,22 @@ fun moveCars(
         }
     }
 }
+
+fun printCarStatus(
+    carName: List<String>,
+    carPositions: Array<Int>,
+) {
+    carName.forEachIndexed { index, name ->
+        val movement = "-".repeat(carPositions[index])
+        println("$name: $movement")
+    }
+}
+
+fun printWinners(
+    carName: List<String>,
+    carPositions: Array<Int>,
+) {
+    val maxPosition = carPositions.maxOrNull()
+    val winners = carName.filterIndexed { index, _ -> carPositions[index] == maxPosition }
+    println("최종 우승자: ${winners.joinToString(", ")}")
+}
