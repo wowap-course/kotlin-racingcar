@@ -51,18 +51,11 @@ class RacingManager {
         try {
             val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
             for (name in inputCarName) {
-                checkNameLength(name)
                 checkBlank(name)
                 racingCars.add(createNewCar(name))
             }
         } catch (e: Exception) {
             throw IllegalArgumentException("잘못된 입력")
-        }
-    }
-
-    private fun checkNameLength(name: String) {
-        if (name.length >= MAX_NAME_LENGTH) {
-            throw Exception()
         }
     }
 
