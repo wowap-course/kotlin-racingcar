@@ -9,12 +9,12 @@ fun main() {
     val race : RaceInfo = readInput()
     val random = Random()
 
-    repeat(times){
-        randomMove(cars, random)
+    repeat(race.time){
+        randomMove(race.cars, random)
     }
 
-    val maxPosition = cars.maxOf {it.position}
-    val winners = cars.filter { it.position == maxPosition }.map { it.name }
+    val maxPosition = race.cars.maxOf {it.position}
+    val winners = race.cars.filter { it.position == maxPosition }.map { it.name }
     println("최종 우승자: $winners")
 }
 
