@@ -40,7 +40,6 @@ fun inputNames(): List<String> {
     println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
     val input: String = readln()
     val names: List<String> = input.split(",")
-
     return names
 }
 
@@ -48,20 +47,22 @@ fun roundCount(): Int {
     // 시도하는 횟수를 받아내기
     println("시도할 횟수는 몇 회인가요?")
     val repeatInput: Int = readln().toInt()
-
     return repeatInput
 }
 
 fun winner(cars: List<Car>) {
-
     val maxPosition = cars.maxOf { it.position }
-
     val answer = mutableListOf<String>()
+    comparePosition(cars, maxPosition, answer)
+    print("\n최종 우승자 : ")
+    println(answer.joinToString(","))
+}
+
+fun comparePosition(cars:List<Car>, maxPosition:Int, answer:MutableList<String>): List<String> {
     for (i in 0..<cars.size) {
         if (cars[i].position == maxPosition) {
             answer.add(cars[i].name)
         }
     }
-    print("\n최종 우승자 : ")
-    println(answer.joinToString(","))
+    return answer
 }
