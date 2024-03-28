@@ -47,7 +47,7 @@ class RacingManager {
 
     private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
-    private fun inputCarName(){
+    private fun inputCarName() {
         try {
             val inputCarName: List<String> = readln().split(COMMA_DELIMITERS)
             for (name in inputCarName) {

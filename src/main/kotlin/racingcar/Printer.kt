@@ -21,7 +21,7 @@ class Printer {
         print("${car.getName()} : ")
     }
 
-    fun printDash(){
+    fun printDash() {
         print("-")
     }
 
