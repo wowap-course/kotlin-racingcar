@@ -18,7 +18,7 @@ class Printer {
     }
 
     fun printCarName(car: Car) {
-        print("${car.getName()} : ")
+        print("${car.name} : ")
     }
 
     fun printDash() {

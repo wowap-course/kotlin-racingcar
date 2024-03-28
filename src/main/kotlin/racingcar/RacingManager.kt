@@ -32,7 +32,7 @@ class RacingManager {
     fun printWinner() {
         setWinner()
         printer.printFinalWinnerCommand()
-        val winnerNames = winnerCars.joinToString(", ") { it.getName() }
+        val winnerNames = winnerCars.joinToString(", ") { it.name }
         printer.printWinnerName(winnerNames)
     }
 
@@ -86,7 +86,7 @@ class RacingManager {
     private fun printRoundResult() {
         for (car in racingCars) {
             printer.printCarName(car)
-            repeat(car.getDistance()) {
+            repeat(car.distance) {
                 printer.printDash()
             }
             println()
@@ -94,10 +94,10 @@ class RacingManager {
     }
 
     private fun setWinner() {
-        val maxDistance = racingCars.maxOfOrNull { it.getDistance() }
+        val maxDistance = racingCars.maxOfOrNull { it.distance }
 
         for (car in racingCars) {
-            if (car.getDistance() == maxDistance) {
+            if (car.distance == maxDistance) {
                 winnerCars.add(car)
             }
         }
