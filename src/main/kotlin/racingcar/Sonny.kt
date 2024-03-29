@@ -29,14 +29,24 @@ class Car(val name: String) {
     var position: Int = 0
 
     init {
-        if (name.length>=5) throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.2")
+        if (name.length>=Car.LIMIT_CAR_NAME) throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.2")
     }
 
     fun move() {
         val randomNumber = rand()
-        if (randomNumber >= 4) {
+        if (randomNumber >= Car.MIN_MOVE_NUMBER) {
             position++
         }
+    }
+
+    companion object {
+        // 자동차 이름 제한
+        const val LIMIT_CAR_NAME = 5
+        // 랜덤 최소 최대 범위
+        const val MIN_RAND_NUMBER = 0
+        const val MAX_RAND_NUMBER = 9
+        // 해당 값 만족시 이동
+        const val MIN_MOVE_NUMBER = 4
     }
 }
 
@@ -68,6 +78,5 @@ fun getWinners(cars: List<Car>): List<String> {
 }
 
 fun rand(): Int {
-    return (0..9).random()
+    return (Car.MIN_RAND_NUMBER..Car.MAX_RAND_NUMBER).random()
 }
-
