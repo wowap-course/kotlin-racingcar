@@ -18,8 +18,8 @@ fun main(){
             cars[i].accel()
         }
     //end
-    var result= mutableListOf(0)
-    var winner= mutableListOf(0)
+    val result= mutableListOf(0)
+    val winner= mutableListOf(0)
     winner.remove(0)
     for (i in 0..namelist.size-1) {
          result.add(cars[i].progres)
@@ -28,12 +28,11 @@ fun main(){
     for (i in 0..namelist.size-1) {
         if(winning == cars[i].progres){
             val winnerlist= mutableListOf(cars[i].name)
-    println("승자는")
     for (name in winnerlist )
-            print(name)
-    println("입니다")
+     print(name)
         }
     }
+    println("가 승자입니다")
 }
 
 
@@ -41,7 +40,7 @@ fun main(){
 class Car(val name: String,var progres: Int){
     constructor(name: String):this(name,0)
 fun accel(){
-    var nnn=Random.nextInt(1,10)
+    val nnn=Random.nextInt(1,10)
     if (nnn>=4) progres++
     println("$name:"+ "-".repeat(progres))
  }
