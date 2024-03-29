@@ -28,6 +28,10 @@ fun main() {
 class Car(val name: String) {
     var position: Int = 0
 
+    init {
+        if (name.length>=5) throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.2")
+    }
+
     fun move() {
         val randomNumber = rand()
         if (randomNumber >= 4) {
@@ -41,9 +45,6 @@ fun createCars(input: String): List<Car> {
 
     val cars = mutableListOf<Car>()
     for (name in inputNames) {
-        if(name.length>4) {
-            throw IllegalArgumentException("자동차 이름은 5글자를 초과할 수 없습니다.")
-        }
         cars.add(Car(name))
     }
 
@@ -69,3 +70,4 @@ fun getWinners(cars: List<Car>): List<String> {
 fun rand(): Int {
     return (0..9).random()
 }
+
