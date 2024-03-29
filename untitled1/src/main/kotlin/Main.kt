@@ -11,13 +11,11 @@ fun main(){
     print("몇번 시도할까요?")
     val num = readln()
     val rap = num.toInt()
-    for (i in 0..namelist.size-1)
-        for (j in 1..rap) {
+     for (j in 1..rap)
+        for (i in 0..namelist.size-1) {
             cars[i].accel()
-//            print(cars[i].progres)
         }
-//    for (i in 0..namelist.size-1)
-//        print(cars[i].progres)
+
 }
 
 class Car(val name: String,var progres: Int){
