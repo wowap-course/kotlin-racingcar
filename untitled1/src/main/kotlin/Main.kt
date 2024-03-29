@@ -13,13 +13,11 @@ fun main(){
     val rap = num.toInt()
     for (i in 0..namelist.size-1)
         for (j in 1..rap) {
-            print("H")
-            //자동차 움직임 구현
             cars[i].accel()
-            print(cars[i].progres)
+//            print(cars[i].progres)
         }
-    for (i in 0..namelist.size-1)
-        print(cars[i].progres)
+//    for (i in 0..namelist.size-1)
+//        print(cars[i].progres)
 }
 
 class Car(val name: String,var progres: Int){
@@ -27,6 +25,9 @@ class Car(val name: String,var progres: Int){
 fun accel(){
     var nnn=Random.nextInt(1,10)
     if (nnn>=4) progres++
+    println(
+        "$name:"+ "-".repeat(progres)
+    )
  }
 }
 //fun opengame(){
