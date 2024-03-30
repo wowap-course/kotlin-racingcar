@@ -20,20 +20,11 @@ class InOutputView {
     }
 
     // 레이스 결과 출력
-    fun raceResultPrint(cars: List<Car>, lap: Int) {
-        println("실행 결과")
+    fun raceResultPrint(name: String, position: Int) {
+        println("${name}: ${"-".repeat(position)}")
+    }
 
-        repeat(lap) { _ ->
-            for (car in cars) {
-                car.move()
-                println("${car.name}: ${"-".repeat(car.position)}")
-            }
-            println()
-        }
-
-        val maxPosition = cars.maxOf { it.position }
-
-        val winners = cars.filter { it.position == maxPosition }.map { it.name }
+    fun winnerPrinter(winners: List<String>) {
         println("최종 우승자는 ${winners.joinToString(", ")} 입니다!^^")
     }
 }
