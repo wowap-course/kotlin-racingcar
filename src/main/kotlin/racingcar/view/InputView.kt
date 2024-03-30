@@ -1,8 +1,6 @@
 package racingcar.view
 
-import racingcar.domain.Car
-
-class InOutputView {
+class InputView {
 
     // 레이스 정보 입력
     fun getCarNames():String {
@@ -17,14 +15,5 @@ class InOutputView {
         val lap = readln().toIntOrNull()
 
         return lap
-    }
-
-    // 레이스 결과 출력
-    fun raceResultPrint(name: String, position: Int) {
-        println("${name}: ${"-".repeat(position)}")
-    }
-
-    fun winnerPrinter(winners: List<String>) {
-        println("최종 우승자는 ${winners.joinToString(", ")} 입니다!^^")
     }
 }

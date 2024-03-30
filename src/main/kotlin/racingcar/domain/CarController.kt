@@ -1,31 +1,33 @@
 package racingcar.domain
 
-import racingcar.view.InOutputView
+import racingcar.view.InputView
+import racingcar.view.OutputView
 
 class CarController {
-    private val ioView = InOutputView()
+    private val inputView = InputView()
+    private val outputView = OutputView()
 
     // 레이스
     fun race() {
         val cars: List<Car> = createCars()
-        val laps: Int? = ioView.getLaps()
+        val laps: Int? = inputView.getLaps()
         if (laps != null) {
             repeat(laps) { _ ->
                 cars.forEach {car ->
                     car.move()
-                    ioView.raceResultPrint(car.name, car.position)
+                    outputView.raceResultPrint(car.name, car.position)
                 }
                 println()
             }
         }
 
         val winners = getWinners(cars)
-        ioView.winnerPrinter(winners)
+        outputView.winnerPrinter(winners)
     }
 
     // 이름을 받아 자동차 객체 생성
     private fun createCars(): List<Car> {
-        val carNames = ioView.getCarNames()
+        val carNames = inputView.getCarNames()
         val inputNames = carNames.split(",").map { it.intern() }
 
         val cars = mutableListOf<Car>()
