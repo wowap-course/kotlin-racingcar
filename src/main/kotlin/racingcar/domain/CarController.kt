@@ -15,8 +15,8 @@ class CarController {
     }
 
     // 우승자 선출
-    fun getWinners(cars: List<Car>): List<String> {
-        val maxPosition = cars.maxOf { it.position }
-        return cars.filter { it.position == maxPosition }.map { it.name }
-    }
+//    fun getWinners(cars: List<Car>): List<String> {
+//        val maxPosition = cars.maxOf { it.position }
+//        return cars.filter { it.position == maxPosition }.map { it.name }
+//    }
 }

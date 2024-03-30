@@ -1,28 +1,26 @@
 package racingcar.view
 
 import racingcar.domain.Car
-import racingcar.domain.CarController
-import racingcar.getWinners
 
 class InOutputView {
 
     // 레이스 정보 입력
-    private fun getCarNameAndLap() {
-       println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
+    fun getCarNames():String {
+       println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).^^")
        val input = readln()
 
-        if (!input.isNullOrBlank()) {
-            val carController = CarController()
-            val cars = carController.createCars(input)
+        return input
+    }
 
-            println("시도할 횟수는 몇 회인가요?")
-            val lap = readln().toIntOrNull()
+    fun getLaps(): Int? {
+        println("시도할 횟수는 몇 회인가요?")
+        val lap = readln().toIntOrNull()
 
-        }
+        return lap
     }
 
     // 레이스 결과 출력
-    private fun raceResultPrint(cars: List<Car>, lap: Int) {
+    fun raceResultPrint(cars: List<Car>, lap: Int): List<String> {
         println("실행 결과")
 
         repeat(lap) { _ ->
@@ -32,5 +30,8 @@ class InOutputView {
             }
             println()
         }
+
+        val maxPosition = cars.maxOf { it.position }
+        return cars.filter { it.position == maxPosition }.map { it.name }
     }
 }

@@ -18,7 +18,7 @@ class Car(val name: String) {
 
     companion object {
         // 자동차 이름 길이 제한
-        const val LIMIT_CAR_NAME = 5
+        const val LIMIT_CAR_NAME = 4
         // 랜덤 최소 최대 범위
         const val MIN_RAND_NUMBER = 0
         const val MAX_RAND_NUMBER = 9
