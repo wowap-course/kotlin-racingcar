@@ -12,8 +12,7 @@ fun main() {
     val carsTes = carController.createCars(inputs)
     val laps = inOutputView.getLaps()
     if (laps != null) {
-        val winners = inOutputView.raceResultPrint(carsTes, laps)
-        println("최종 우승자는 ${winners.joinToString(", ")} 입니다!")
+        inOutputView.raceResultPrint(carsTes, laps)
     }
 
 

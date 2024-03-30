@@ -20,7 +20,7 @@ class InOutputView {
     }
 
     // 레이스 결과 출력
-    fun raceResultPrint(cars: List<Car>, lap: Int): List<String> {
+    fun raceResultPrint(cars: List<Car>, lap: Int) {
         println("실행 결과")
 
         repeat(lap) { _ ->
@@ -32,6 +32,8 @@ class InOutputView {
         }
 
         val maxPosition = cars.maxOf { it.position }
-        return cars.filter { it.position == maxPosition }.map { it.name }
+
+        val winners = cars.filter { it.position == maxPosition }.map { it.name }
+        println("최종 우승자는 ${winners.joinToString(", ")} 입니다!^^")
     }
 }
