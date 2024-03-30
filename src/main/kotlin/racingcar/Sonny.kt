@@ -1,10 +1,7 @@
 package racingcar
 
 import racingcar.domain.CarController
-import java.util.Random
 import racingcar.view.InOutputView
-
-val random = Random()
 
 fun main() {
 
@@ -13,9 +10,9 @@ fun main() {
 
     val inputs = inOutputView.getCarNames()
     val carsTes = carController.createCars(inputs)
-    val lapss = inOutputView.getLaps()
-    if (lapss != null) {
-        val winners = inOutputView.raceResultPrint(carsTes, lapss)
+    val laps = inOutputView.getLaps()
+    if (laps != null) {
+        val winners = inOutputView.raceResultPrint(carsTes, laps)
         println("최종 우승자는 ${winners.joinToString(", ")} 입니다!")
     }
 
