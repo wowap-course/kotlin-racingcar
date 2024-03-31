@@ -39,15 +39,9 @@ class RacingManager {
 
     private fun decideGoOrNot() {
         for (car in racingCars) {
-            if (randomNumberOverFour()) {
-                car.moveForward()
-            }
+            car.moveForward()
         }
     }
-
-    private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= VALIDATE_RANDOM_NUMBER
-
-    private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
 
     private fun printRoundResult() {
         for (car in racingCars) {
