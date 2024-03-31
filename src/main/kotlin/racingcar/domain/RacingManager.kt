@@ -1,4 +1,6 @@
-package racingcar
+package racingcar.domain
+
+import racingcar.view.Printer
 
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
