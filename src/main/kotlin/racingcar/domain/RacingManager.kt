@@ -25,19 +25,6 @@ class RacingManager {
         }
     }
 
-    private fun setWinner() : MutableList<Car> {
-        val maxDistance = racingCars.maxOfOrNull { it.distance }
-        val winnerCars = mutableListOf<Car>()
-
-        for (car in racingCars) {
-            if (car.distance == maxDistance) {
-                winnerCars.add(car)
-            }
-        }
-
-        return winnerCars
-    }
-
     companion object {
         const val INIT_CAR_DISTANCE = 0
     }
