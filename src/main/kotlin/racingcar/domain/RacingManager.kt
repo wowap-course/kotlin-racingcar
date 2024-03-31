@@ -15,32 +15,9 @@ class RacingManager {
         printWinner()
     }
 
-    private fun gameStart() {
-        outputView.printInsertCarNameCommand()
-        inputView.inputCarName()
-        outputView.printInsertRepeatTimeCommand()
-        inputView.inputRepeatTime()
-    }
-
-    private fun gameRun() {
-        outputView.printResultCommand()
-        for (i in START_OF_REPEAT..repeatTime) {
-            decideGoOrNot()
-            printRoundResult()
-            println()
-        }
-    }
-
-    private fun printWinner() {
-        outputView.printFinalWinnerCommand()
-        val winnerNames = setWinner().joinToString(", ") { it.name }
-        outputView.printWinnerName(winnerNames)
-    }
-
-    private fun decideGoOrNot() {
-        for (car in racingCars) {
-            car.moveForward()
-        }
+    private fun createNewCars(): List<Car> {
+        val names = inputView.inputCarName()
+        return names.map { name -> Car(name, INIT_CAR_DISTANCE) }
     }
 
     private fun printRoundResult() {
