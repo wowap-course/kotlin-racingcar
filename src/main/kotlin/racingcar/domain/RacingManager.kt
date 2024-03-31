@@ -1,11 +1,11 @@
 package racingcar.domain
 
-import racingcar.view.Printer
+import racingcar.view.OutputView
 
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = INIT_NUMBER
-    private val printer = Printer()
+    private val outputView = OutputView()
 
     fun run() {
         gameStart()
@@ -14,14 +14,14 @@ class RacingManager {
     }
 
     private fun gameStart() {
-        printer.printInsertCarNameCommand()
+        outputView.printInsertCarNameCommand()
         inputCarName()
-        printer.printInsertRepeatTimeCommand()
+        outputView.printInsertRepeatTimeCommand()
         inputRepeatTime()
     }
 
     private fun gameRun() {
-        printer.printResultCommand()
+        outputView.printResultCommand()
         for (i in START_OF_REPEAT..repeatTime) {
             decideGoOrNot()
             printRoundResult()
@@ -30,9 +30,9 @@ class RacingManager {
     }
 
     private fun printWinner() {
-        printer.printFinalWinnerCommand()
+        outputView.printFinalWinnerCommand()
         val winnerNames = setWinner().joinToString(", ") { it.name }
-        printer.printWinnerName(winnerNames)
+        outputView.printWinnerName(winnerNames)
     }
 
     private fun decideGoOrNot() {
@@ -75,9 +75,9 @@ class RacingManager {
 
     private fun printRoundResult() {
         for (car in racingCars) {
-            printer.printCarName(car)
+            outputView.printCarName(car)
             repeat(car.distance) {
-                printer.printDash()
+                outputView.printDash()
             }
             println()
         }
