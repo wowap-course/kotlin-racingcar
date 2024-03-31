@@ -3,12 +3,15 @@ package racingcar.view
 class InputView {
     fun inputCarName(): List<String> {
         println("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
-        return readln().split(INPUT_SEPARATER)
+        val inputName = readln().split(INPUT_SEPARATER)
+        checkBlank(inputName)
+
+        return inputName
     }
 
-    private fun checkBlank(name: String) {
-        if (name.isBlank()) {
-            throw Exception()
+    private fun checkBlank(names: List<String>) {
+        names.forEach {
+            require(it.isNotBlank()) { "이름이 공백으로 이루어지면 안됩니다." }
         }
     }
 
