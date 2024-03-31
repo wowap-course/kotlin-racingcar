@@ -17,9 +17,9 @@ class RacingManager {
 
     private fun gameStart() {
         outputView.printInsertCarNameCommand()
-        inputCarName()
+        inputView.inputCarName()
         outputView.printInsertRepeatTimeCommand()
-        inputRepeatTime()
+        inputView.inputRepeatTime()
     }
 
     private fun gameRun() {
@@ -48,32 +48,6 @@ class RacingManager {
     private fun randomNumberOverFour(): Boolean = randomNumberCreate() >= VALIDATE_RANDOM_NUMBER
 
     private fun randomNumberCreate() = (MIN_VALUE_OF_RANDOM_NUMBER..MAX_VALUE_OF_RANDOM_NUMBER).random()
-
-    private fun inputCarName() {
-        try {
-            val inputCarName: List<String> = readln().split(INPUT_SEPARATER)
-            for (name in inputCarName) {
-                checkBlank(name)
-                racingCars.add(Car(name, INIT_NUMBER))
-            }
-        } catch (e: Exception) {
-            throw IllegalArgumentException("잘못된 입력")
-        }
-    }
-
-    private fun checkBlank(name: String) {
-        if (name.isBlank()) {
-            throw Exception()
-        }
-    }
-
-    private fun inputRepeatTime() {
-        try {
-            repeatTime = readln().toInt()
-        } catch (e: Exception) {
-            throw IllegalArgumentException("잘못된 입력")
-        }
-    }
 
     private fun printRoundResult() {
         for (car in racingCars) {
