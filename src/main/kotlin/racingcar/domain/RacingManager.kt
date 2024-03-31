@@ -18,13 +18,10 @@ class RacingManager {
         return names.map { name -> Car(name, INIT_CAR_DISTANCE) }
     }
 
-    private fun printRoundResult() {
-        for (car in racingCars) {
-            outputView.printCarName(car)
-            repeat(car.distance) {
-                outputView.printDash()
-            }
-            println()
+    private fun printRoundResult(cars: List<Car>) {
+        for (car in cars) {
+            car.moveForward()
+            outputView.printCarStatePerRound(car)
         }
     }
 
