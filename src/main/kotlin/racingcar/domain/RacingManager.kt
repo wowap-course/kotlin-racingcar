@@ -8,9 +8,16 @@ class RacingManager {
     private val inputView = InputView()
 
     fun run() {
-        gameStart()
-        gameRun()
-        printWinner()
+        val cars = createNewCars()
+        val repeatTime = inputView.inputRepeatTime()
+        outputView.printResultCommand()
+        repeat(repeatTime) {
+            // 함수이름 변경
+            printRoundResult(cars)
+            println()
+        }
+        val winners = Judge(cars).setWinner()
+        outputView.printWinnerName(winners)
     }
 
     private fun createNewCars(): List<Car> {
