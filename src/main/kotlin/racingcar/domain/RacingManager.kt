@@ -44,11 +44,6 @@ class RacingManager {
     }
 
     companion object {
-        const val INIT_NUMBER = 0
-        const val MIN_VALUE_OF_RANDOM_NUMBER = 0
-        const val MAX_VALUE_OF_RANDOM_NUMBER = 9
-        const val INPUT_SEPARATER = ","
-        const val VALIDATE_RANDOM_NUMBER = 4
-        const val START_OF_REPEAT = 1
+        const val INIT_CAR_DISTANCE = 0
     }
 }
