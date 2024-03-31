@@ -7,16 +7,12 @@ class OutputView {
         println("\n실행 결과")
     }
 
-    fun printFinalWinnerCommand() {
-        print("최종 우승자: ")
-    }
-
-    fun printCarName(car: Car) {
+    fun printCarStatePerRound(car: Car) {
         print("${car.name} : ")
-    }
-
-    fun printDash() {
-        print("-")
+        repeat(car.distance) {
+            print("-")
+        }
+        println()
     }
 
     fun printWinnerName(winners: List<Car>) {
