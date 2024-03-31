@@ -1,11 +1,13 @@
 package racingcar.domain
 
+import racingcar.view.InputView
 import racingcar.view.OutputView
 
 class RacingManager {
     private val racingCars = mutableListOf<Car>()
     private var repeatTime: Int = INIT_NUMBER
     private val outputView = OutputView()
+    private val inputView = InputView()
 
     fun run() {
         gameStart()
