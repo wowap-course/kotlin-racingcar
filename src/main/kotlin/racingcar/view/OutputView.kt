@@ -19,7 +19,8 @@ class OutputView {
         print("-")
     }
 
-    fun printWinnerName(winnerName: String) {
-        print(winnerName)
+    fun printWinnerName(winners: List<Car>) {
+        print("최종 우승자: ")
+        print(winners.joinToString(", ") { it.name })
     }
 }
