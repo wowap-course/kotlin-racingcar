@@ -1,4 +1,4 @@
-# kotlin-racingcar
+# kotlin-domain
 
 ## 미션 요구사항
 

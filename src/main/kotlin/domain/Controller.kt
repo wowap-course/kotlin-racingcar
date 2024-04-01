@@ -1,4 +1,4 @@
-package racingcar
+package domain
 
 import java.util.Random
 import java.util.Scanner
