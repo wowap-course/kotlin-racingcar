@@ -6,7 +6,7 @@ class InputView {
         return readln().split(",")
     }
 
-    fun readRaceTimes(): Int{
+    fun readRaceTime(): Int{
         println("시도할 횟수는 몇 회인가요?")
         return readln().toInt()
     }
