@@ -21,14 +21,6 @@ class ControllerTest {
     }
 
     @Test
-    fun `이름을 입력받으면 자동차를 생성한다`() {
-        val con = CarController()
-        val cars = con.createCars()
-
-        println(cars)
-    }
-
-    @Test
     fun `가장 많이 이동한 자동차가 우승한다`() {
         val con = Judgment()
         val car1 = Car("a")

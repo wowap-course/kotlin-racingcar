@@ -6,7 +6,7 @@ import racingcar.view.OutputView
 class CarController {
     private val inputView = InputView()
     private val outputView = OutputView()
-    private val jugment = Judgment()
+    private val judgment = Judgment()
 
     // 레이스
     fun race() {
@@ -22,7 +22,7 @@ class CarController {
             }
         }
 
-        val winners = jugment.getWinners(cars)
+        val winners = judgment.getWinners(cars)
         outputView.winnerPrinter(winners)
     }
 
@@ -37,14 +37,5 @@ class CarController {
         }
 
         return cars
-    }
-
-
-    //단위 테스트를 테스트 하기 위한 예제 코드
-    fun unitTest(): Int{
-        val a: Int = 1
-        val b: Int = 3
-
-        return a*b
     }
 }
