@@ -26,6 +26,7 @@ class RacingManager {
             car.moveForward()
             outputView.printCarStatePerRound(car)
         }
+        println()
     }
 
     companion object {
