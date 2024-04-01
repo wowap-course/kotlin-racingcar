@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GameController {
+class RacingGameController {
     let inputView: InputView
     let outputView: OutputView
 
