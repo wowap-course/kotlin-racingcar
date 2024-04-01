@@ -8,9 +8,9 @@
 import Foundation
 
 class Referee{
-    func findWinners(cars : [Car]){
+    func findWinners(cars : [Car]) -> [Car]{
         let maxPosition = cars.map { $0.position }.max() ?? 0
         let winners = cars.filter { $0.position >= maxPosition }
-        print("최종 우승자:", winners.map { $0.name }.joined(separator: ", "))
+        return winners
     }
 }

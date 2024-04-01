@@ -16,8 +16,7 @@ func goRacing(count: Int, cars: [Car]){
 func moveCars(cars: [Car]){
     for car in cars{
         car.go()
-        let dashes = String(repeating: "-", count: car.position)
-        print("\(car.name) : \(dashes)")
+ 
     }
     print()
 }
