@@ -49,6 +49,7 @@
 		127BA23C2BBA9D450055CB61 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				12ED77B72BB2F4AC00CAFF16 /* Car.swift */,
 				127BA2402BBAF95F0055CB61 /* Referee.swift */,
 			);
 			path = domain;
@@ -84,7 +85,6 @@
 				127BA23D2BBA9D4C0055CB61 /* view */,
 				127BA23C2BBA9D450055CB61 /* domain */,
 				12ED77B02BB2F45D00CAFF16 /* main.swift */,
-				12ED77B72BB2F4AC00CAFF16 /* Car.swift */,
 				1280034A2BB32D8E00A9436B /* GamePlay.swift */,
 			);
 			path = racingcar;
