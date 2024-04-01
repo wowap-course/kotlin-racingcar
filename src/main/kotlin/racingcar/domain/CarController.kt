@@ -6,6 +6,7 @@ import racingcar.view.OutputView
 class CarController {
     private val inputView = InputView()
     private val outputView = OutputView()
+    private val jugment = Judgment()
 
     // 레이스
     fun race() {
@@ -21,7 +22,7 @@ class CarController {
             }
         }
 
-        val winners = getWinners(cars)
+        val winners = jugment.getWinners(cars)
         outputView.winnerPrinter(winners)
     }
 
@@ -38,11 +39,6 @@ class CarController {
         return cars
     }
 
-    // 우승자 선출
-    fun getWinners(cars: List<Car>): List<String> {
-        val maxPosition = cars.maxOf { it.position }
-        return cars.filter { it.position == maxPosition }.map { it.name }
-    }
 
     //단위 테스트를 테스트 하기 위한 예제 코드
     fun unitTest(): Int{

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import racingcar.domain.Car
 import racingcar.domain.CarController
+import racingcar.domain.Judgment
 
 class ControllerTest {
 
@@ -19,9 +20,6 @@ class ControllerTest {
         val car = Car("aaaaa")
     }
 
-//    @Test
-//    fun `가장 많은 포인트를 보유한 우승자를 선출한다`() {
-//    }
     @Test
     fun `이름을 입력받으면 자동차를 생성한다`() {
         val con = CarController()
@@ -32,7 +30,7 @@ class ControllerTest {
 
     @Test
     fun `가장 많이 이동한 자동차가 우승한다`() {
-        val con = CarController()
+        val con = Judgment()
         val car1 = Car("a")
         val car2 = Car("b")
         val car3 = Car("c")
