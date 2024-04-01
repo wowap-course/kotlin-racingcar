@@ -15,4 +15,8 @@ class OutputView {
     func winnersNamePrint(winners: [Car]){
         print("최종 우승자:", winners.map { $0.name }.joined(separator: ", "))
     }
+    
+    func errorInputName(){
+        print("입력한 자동차 이름이 올바르지 않습니다.")
+    }
 }

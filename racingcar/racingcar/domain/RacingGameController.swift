@@ -27,18 +27,24 @@ class RacingGameController {
             let winners = Referee().findWinners(cars: cars)
             outputView.winnersNamePrint(winners: winners)
         } catch {
-            print("입력한 자동차 이름이 올바르지 않습니다.")
+            outputView.errorInputName()
         }
-
     }
 
     private func createCars() throws -> [Car] {
-        let names = inputView.inputCarName() // 사용자 입력 받기
-        return names.compactMap { name in
-            try? Car(name: name) // Car 인스턴스 생성 및 반환
+        let names = inputView.inputCarName()
+        var cars = [Car]()
+        for name in names {
+            do {
+                let car = try Car(name: name)
+                cars.append(car)
+            } catch {
+                throw error
+            }
         }
-
+        return cars
     }
+
 
 
     private func playOneRound(cars: [Car]) {
