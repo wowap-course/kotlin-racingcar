@@ -13,6 +13,7 @@ class GameController(
         val Cars : List<Car> = names.map { Car(it) }
 
         repeat(time){ playRound(Cars) }
+
     }
     private fun playRound(Cars: List<Car>){
         Cars.forEach {
