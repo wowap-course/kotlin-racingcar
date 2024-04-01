@@ -13,7 +13,11 @@ class GameController(
         val Cars : List<Car> = names.map { Car(it) }
 
         repeat(time){
-            Cars.forEach { it.move() }
+            Cars.forEach {
+                it.move()
+                outputView.printPositionOfCar(it.name, it.position)
+            }
+
         }
     }
 }
