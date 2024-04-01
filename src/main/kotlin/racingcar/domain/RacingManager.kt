@@ -11,11 +11,7 @@ class RacingManager {
         val cars = createNewCars()
         val repeatTime = inputView.inputRepeatTime()
         outputView.printResultCommand()
-        repeat(repeatTime) {
-            // 함수이름 변경
-            printRoundResult(cars)
-            println()
-        }
+        repeat(repeatTime) { printRoundResult(cars) }
         val winners = Judge(cars).setWinner()
         outputView.printWinnerName(winners)
     }
