@@ -26,7 +26,7 @@ class CarController {
     }
 
     // 이름을 받아 자동차 객체 생성
-    private fun createCars(): List<Car> {
+    fun createCars(): List<Car> {
         val carNames = inputView.getCarNames()
         val inputNames = carNames.split(",").map { it.intern() }
 
@@ -39,8 +39,16 @@ class CarController {
     }
 
     // 우승자 선출
-    private fun getWinners(cars: List<Car>): List<String> {
+    fun getWinners(cars: List<Car>): List<String> {
         val maxPosition = cars.maxOf { it.position }
         return cars.filter { it.position == maxPosition }.map { it.name }
+    }
+
+    //단위 테스트를 테스트 하기 위한 예제 코드
+    fun unitTest(): Int{
+        val a: Int = 1
+        val b: Int = 3
+
+        return a*b
     }
 }
