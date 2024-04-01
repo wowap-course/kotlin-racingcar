@@ -12,8 +12,6 @@ func main(){
     do {
         let cars = try inputData()
         
-        print("시도할 횟수는 몇회인가요?")
-        let count = Int(readLine()!)!
         
         goRacing(count: count, cars: cars)
         findWinners(cars: cars)
@@ -23,9 +21,7 @@ func main(){
 }
 
 func inputData() throws -> [Car]{
-    print("경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).")
     var cars: [Car] = []
-    let carInput = readLine()!.split(separator: ",").map{ String($0) }
     
     for name in carInput{
         cars.append(try Car(name: name))
