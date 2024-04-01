@@ -6,7 +6,8 @@ class Car(val name : String, initPosition : Int = 0) {
     init{
         require(name.length in 1..5)
     }
-    fun move(condition : Int) {
-        if(condition > 3) position++
+    fun move() {
+        val randomNum = (0..9).random()
+        if (randomNum >= 4) position++
     }
 }
