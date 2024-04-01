@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		127BA23F2BBA9E220055CB61 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA23E2BBA9E220055CB61 /* InputView.swift */; };
+		127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
 		1280034B2BB32D8E00A9436B /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280034A2BB32D8E00A9436B /* GamePlay.swift */; };
 		12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B02BB2F45D00CAFF16 /* main.swift */; };
 		12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		127BA23E2BBA9E220055CB61 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		127BA2402BBAF95F0055CB61 /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
 		1280034A2BB32D8E00A9436B /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		12ED77AD2BB2F45D00CAFF16 /* racingcar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = racingcar; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ED77B02BB2F45D00CAFF16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		127BA23C2BBA9D450055CB61 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				127BA2402BBAF95F0055CB61 /* Referee.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */,
+				127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */,
 				127BA23F2BBA9E220055CB61 /* InputView.swift in Sources */,
 				12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */,
 				1280034B2BB32D8E00A9436B /* GamePlay.swift in Sources */,
