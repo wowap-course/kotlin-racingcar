@@ -11,7 +11,7 @@ enum CarInputError: Error {
 import Foundation
 
 class Car {
-    var name: String
+    private(set) var name: String
     var position = 0
     
     init(name: String) throws {

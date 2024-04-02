@@ -8,7 +8,6 @@
 import XCTest
 @testable import racingcar
 
-
 final class CarTest: XCTestCase {
     
 //    func test_자동차는_이름을_가짐() throws{

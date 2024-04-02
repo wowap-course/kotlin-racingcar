@@ -14,6 +14,7 @@
 		129323842BBBC5790088424C /* RacingCarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129323832BBBC5790088424C /* RacingCarTest.swift */; };
 		12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
 		12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
+		12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D163112BBBCABD004FBFBA /* RefereeTest.swift */; };
 		12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B02BB2F45D00CAFF16 /* main.swift */; };
 		12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		127BA2462BBB00F20055CB61 /* RacingGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGameController.swift; sourceTree = "<group>"; };
 		129323812BBBC5790088424C /* RacingCarTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacingCarTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129323832BBBC5790088424C /* RacingCarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingCarTest.swift; sourceTree = "<group>"; };
+		12D163112BBBCABD004FBFBA /* RefereeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefereeTest.swift; sourceTree = "<group>"; };
 		12ED77AD2BB2F45D00CAFF16 /* racingcar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = racingcar; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ED77B02BB2F45D00CAFF16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		12ED77B72BB2F4AC00CAFF16 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				129323832BBBC5790088424C /* RacingCarTest.swift */,
+				12D163112BBBCABD004FBFBA /* RefereeTest.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */,
 				12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */,
+				12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */,
 				129323842BBBC5790088424C /* RacingCarTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
