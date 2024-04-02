@@ -14,6 +14,7 @@ class GameController(
 
         repeat(time){ playRound(cars) }
         val winners = Judgement().judgeTheWinner(cars)
+        outputView.printWinners(winners)
 
     }
     private fun playRound(cars: List<Car>){
