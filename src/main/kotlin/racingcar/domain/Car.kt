@@ -1,7 +1,8 @@
 package racingcar.domain
 
-class Car(val name: String) {
-    var position = 0
+class Car(val name: String, initPosition:Int = 0) {
+    var position: Int = initPosition
+        private set
 
     init {
         if (name.length > MAX_NAME_LENGTH) throw IllegalArgumentException()
