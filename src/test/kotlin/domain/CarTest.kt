@@ -12,5 +12,11 @@ class CarTest {
         assertThat(car.name).isEqualTo("avcc")
     }
 
+    @Test
+    fun `자동차 이름 글자 수는 5글자를 초과할 수 없다`() {
+        // then
+        assertThrows<IllegalArgumentException> { Car("abcdef") }
+    }
+
 
 }
