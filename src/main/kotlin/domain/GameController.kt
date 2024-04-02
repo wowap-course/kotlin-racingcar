@@ -10,13 +10,12 @@ class GameController(
     fun run() {
         val names = inputView.readCarNames()
         val time = inputView.readRaceTime()
-        val Cars : List<Car> = names.map { Car(it) }
+        val cars : List<Car> = names.map { Car(it) }
 
-        repeat(time){ playRound(Cars) }
-
+        repeat(time){ playRound(cars) }
     }
-    private fun playRound(Cars: List<Car>){
-        Cars.forEach {
+    private fun playRound(cars: List<Car>){
+        cars.forEach {
             it.move()
             outputView.printPositionOfCar(it.name, it.position)
         }
