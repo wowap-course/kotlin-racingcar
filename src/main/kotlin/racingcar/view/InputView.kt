@@ -9,7 +9,7 @@ class InputView {
 
     fun inputRepeatTime(): Int {
         println("시도할 횟수는 몇 회인가요?")
-        return readln().toInt()
+        return requireNotNull(readln().toIntOrNull()) { "입력 횟수는 정수여야 합니다" }
     }
 
     companion object {
