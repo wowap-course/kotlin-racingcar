@@ -13,6 +13,8 @@ class GameController(
         val cars : List<Car> = names.map { Car(it) }
 
         repeat(time){ playRound(cars) }
+        val winners = Judgement().judgeTheWinner(cars)
+
     }
     private fun playRound(cars: List<Car>){
         cars.forEach {
