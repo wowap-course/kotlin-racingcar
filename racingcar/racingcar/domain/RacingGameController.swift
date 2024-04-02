@@ -20,8 +20,8 @@ class RacingGameController {
         do {
             let cars = try createCars()
             let raceTime = inputView.inputRaceCount()
-            for _ in 0..<raceTime {
-                playOneRound(cars: cars)
+            for currentRound in 1...raceTime {
+                playOneRound(cars: cars, round: currentRound)
             }
 
             let winners = Referee().findWinners(cars: cars)
@@ -47,7 +47,8 @@ class RacingGameController {
 
 
 
-    private func playOneRound(cars: [Car]) {
+    private func playOneRound(cars: [Car], round: Int) {
+        outputView.roundPrint(round: round)
         for car in cars {
             car.go()
             outputView.carMovePrint(name: car.name, position: car.position)

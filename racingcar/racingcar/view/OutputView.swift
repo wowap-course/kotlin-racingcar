@@ -19,4 +19,8 @@ class OutputView {
     func errorInputName(){
         print("입력한 자동차 이름이 올바르지 않습니다.")
     }
+    
+    func roundPrint(round:Int){
+        print("\n현재 라운드 \(round)")
+    }
 }

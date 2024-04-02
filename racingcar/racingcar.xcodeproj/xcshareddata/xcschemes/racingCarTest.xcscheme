@@ -19,9 +19,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12A32BCE2BBBC133008FE476"
-               BuildableName = "racingCarTest.xctest"
-               BlueprintName = "racingCarTest"
+               BlueprintIdentifier = "129323802BBBC5790088424C"
+               BuildableName = "RacingCarTest.xctest"
+               BlueprintName = "RacingCarTest"
                ReferencedContainer = "container:racingcar.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -37,6 +37,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "12ED77AC2BB2F45D00CAFF16"
+            BuildableName = "racingcar"
+            BlueprintName = "racingcar"
+            ReferencedContainer = "container:racingcar.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -44,6 +54,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "12ED77AC2BB2F45D00CAFF16"
+            BuildableName = "racingcar"
+            BlueprintName = "racingcar"
+            ReferencedContainer = "container:racingcar.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
