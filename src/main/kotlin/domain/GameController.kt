@@ -22,5 +22,6 @@ class GameController(
             it.move()
             outputView.printPositionOfCar(it.name, it.position)
         }
+        println()
     }
 }
