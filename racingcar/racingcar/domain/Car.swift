@@ -17,6 +17,7 @@ class Car {
     init(name: String) throws {
         self.name = name
         
+        // 이름이 기준에서 넘거나 빈 문자열로 들어온 경우 예외처리
         if !(Car.minNameLength...Car.maxNameLength).contains(name.count) || name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             throw CarInputError.invalidArgumentException
         }
