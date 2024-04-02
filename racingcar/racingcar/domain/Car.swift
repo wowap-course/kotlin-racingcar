@@ -14,8 +14,9 @@ class Car {
     private(set) var name: String
     var position = 0
     
-    init(name: String) throws {
+    init(name: String, position: Int = 0) throws {
         self.name = name
+        self.position = position
         
         // 이름이 기준에서 넘거나 빈 문자열로 들어온 경우 예외처리
         if !(Car.minNameLength...Car.maxNameLength).contains(name.count) || name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
