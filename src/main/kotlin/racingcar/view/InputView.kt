@@ -7,12 +7,6 @@ class InputView {
         return readln().split(INPUT_SEPARATER)
     }
 
-    private fun checkBlank(names: List<String>) {
-        names.forEach {
-            require(it.isNotBlank()) { "이름이 공백으로 이루어지면 안됩니다." }
-        }
-    }
-
     fun inputRepeatTime(): Int {
         println("시도할 횟수는 몇 회인가요?")
         return readln().toInt()
