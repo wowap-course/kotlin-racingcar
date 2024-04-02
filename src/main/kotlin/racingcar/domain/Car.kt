@@ -8,7 +8,7 @@ class Car(val name: String, initPosition: Int = 0) {
         require(name.length in MIN_NAME_LENGTH..MAX_NAME_LENGTH)
     }
 
-    fun go() {
+    fun move() {
         val randomNumber = (MIN_RANDOM_NUMBER..MAX_RANDOM_NUMBER).random()
         if (randomNumber >= RANDOM_CONDITION) {
             position++

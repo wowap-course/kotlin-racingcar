@@ -25,7 +25,7 @@ class GameController(
 
     private fun playOneRound(cars: List<Car>) {
         cars.forEach { car ->
-            car.go()
+            car.move()
             outputView.printCarMove(car.name, car.position)
         }
     }

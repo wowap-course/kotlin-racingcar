@@ -22,7 +22,7 @@ class CarTest {
         // given
         val car = Car("최성훈")
         // when
-        car.go()
+        car.move()
         // then
         assertThat(car.position).isEqualTo(1)
     }
