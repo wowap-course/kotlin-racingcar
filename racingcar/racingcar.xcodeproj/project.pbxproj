@@ -11,13 +11,15 @@
 		127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
 		127BA2452BBAFEDE0055CB61 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2442BBAFEDE0055CB61 /* OutputView.swift */; };
 		127BA2472BBB00F20055CB61 /* RacingGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2462BBB00F20055CB61 /* RacingGameController.swift */; };
-		127BA25C2BBB0A9B0055CB61 /* CarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA25B2BBB0A9B0055CB61 /* CarTest.swift */; };
+		129323842BBBC5790088424C /* RacingCarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129323832BBBC5790088424C /* RacingCarTest.swift */; };
+		12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
+		12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
 		12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B02BB2F45D00CAFF16 /* main.swift */; };
 		12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1219F34D2BBB14AD002D025F /* PBXContainerItemProxy */ = {
+		12D1630B2BBBC68A004FBFBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 12ED77A52BB2F45D00CAFF16 /* Project object */;
 			proxyType = 1;
@@ -43,15 +45,15 @@
 		127BA2402BBAF95F0055CB61 /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
 		127BA2442BBAFEDE0055CB61 /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
 		127BA2462BBB00F20055CB61 /* RacingGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGameController.swift; sourceTree = "<group>"; };
-		127BA24C2BBB09F10055CB61 /* racingCarUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = racingCarUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		127BA25B2BBB0A9B0055CB61 /* CarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTest.swift; sourceTree = "<group>"; };
+		129323812BBBC5790088424C /* RacingCarTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacingCarTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		129323832BBBC5790088424C /* RacingCarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingCarTest.swift; sourceTree = "<group>"; };
 		12ED77AD2BB2F45D00CAFF16 /* racingcar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = racingcar; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ED77B02BB2F45D00CAFF16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		12ED77B72BB2F4AC00CAFF16 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		127BA2492BBB09F10055CB61 /* Frameworks */ = {
+		1293237E2BBBC5790088424C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,18 +89,18 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		127BA24D2BBB09F10055CB61 /* racingCarUnitTest */ = {
+		129323822BBBC5790088424C /* RacingCarTest */ = {
 			isa = PBXGroup;
 			children = (
-				127BA25A2BBB0A8F0055CB61 /* domain */,
+				12D163102BBBC9FC004FBFBA /* domain */,
 			);
-			path = racingCarUnitTest;
+			path = RacingCarTest;
 			sourceTree = "<group>";
 		};
-		127BA25A2BBB0A8F0055CB61 /* domain */ = {
+		12D163102BBBC9FC004FBFBA /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				127BA25B2BBB0A9B0055CB61 /* CarTest.swift */,
+				129323832BBBC5790088424C /* RacingCarTest.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -107,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				12ED77AF2BB2F45D00CAFF16 /* racingcar */,
-				127BA24D2BBB09F10055CB61 /* racingCarUnitTest */,
+				129323822BBBC5790088424C /* RacingCarTest */,
 				12ED77AE2BB2F45D00CAFF16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				12ED77AD2BB2F45D00CAFF16 /* racingcar */,
-				127BA24C2BBB09F10055CB61 /* racingCarUnitTest.xctest */,
+				129323812BBBC5790088424C /* RacingCarTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,22 +136,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		127BA24B2BBB09F10055CB61 /* racingCarUnitTest */ = {
+		129323802BBBC5790088424C /* RacingCarTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 127BA2502BBB09F10055CB61 /* Build configuration list for PBXNativeTarget "racingCarUnitTest" */;
+			buildConfigurationList = 129323872BBBC5790088424C /* Build configuration list for PBXNativeTarget "RacingCarTest" */;
 			buildPhases = (
-				127BA2482BBB09F10055CB61 /* Sources */,
-				127BA2492BBB09F10055CB61 /* Frameworks */,
-				127BA24A2BBB09F10055CB61 /* Resources */,
+				1293237D2BBBC5790088424C /* Sources */,
+				1293237E2BBBC5790088424C /* Frameworks */,
+				1293237F2BBBC5790088424C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1219F34E2BBB14AD002D025F /* PBXTargetDependency */,
+				12D1630C2BBBC68A004FBFBA /* PBXTargetDependency */,
 			);
-			name = racingCarUnitTest;
-			productName = racingCarUnitTest;
-			productReference = 127BA24C2BBB09F10055CB61 /* racingCarUnitTest.xctest */;
+			name = RacingCarTest;
+			productName = RacingCarTest;
+			productReference = 129323812BBBC5790088424C /* RacingCarTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		12ED77AC2BB2F45D00CAFF16 /* racingcar */ = {
@@ -179,7 +181,7 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					127BA24B2BBB09F10055CB61 = {
+					129323802BBBC5790088424C = {
 						CreatedOnToolsVersion = 15.3;
 					};
 					12ED77AC2BB2F45D00CAFF16 = {
@@ -201,13 +203,13 @@
 			projectRoot = "";
 			targets = (
 				12ED77AC2BB2F45D00CAFF16 /* racingcar */,
-				127BA24B2BBB09F10055CB61 /* racingCarUnitTest */,
+				129323802BBBC5790088424C /* RacingCarTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		127BA24A2BBB09F10055CB61 /* Resources */ = {
+		1293237F2BBBC5790088424C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,11 +219,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		127BA2482BBB09F10055CB61 /* Sources */ = {
+		1293237D2BBBC5790088424C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127BA25C2BBB0A9B0055CB61 /* CarTest.swift in Sources */,
+				12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */,
+				12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */,
+				129323842BBBC5790088424C /* RacingCarTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,15 +245,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1219F34E2BBB14AD002D025F /* PBXTargetDependency */ = {
+		12D1630C2BBBC68A004FBFBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 12ED77AC2BB2F45D00CAFF16 /* racingcar */;
-			targetProxy = 1219F34D2BBB14AD002D025F /* PBXContainerItemProxy */;
+			targetProxy = 12D1630B2BBBC68A004FBFBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		127BA2512BBB09F10055CB61 /* Debug */ = {
+		129323852BBBC5790088424C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -259,7 +263,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.racingCarUnitTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.RacingCarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -269,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		127BA2522BBB09F10055CB61 /* Release */ = {
+		129323862BBBC5790088424C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -279,7 +283,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.racingCarUnitTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.RacingCarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -326,6 +330,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -389,6 +394,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -415,6 +421,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = racingcar;
 				SWIFT_VERSION = 5.0;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Debug;
 		};
@@ -426,17 +433,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = racingcar;
 				SWIFT_VERSION = 5.0;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		127BA2502BBB09F10055CB61 /* Build configuration list for PBXNativeTarget "racingCarUnitTest" */ = {
+		129323872BBBC5790088424C /* Build configuration list for PBXNativeTarget "RacingCarTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				127BA2512BBB09F10055CB61 /* Debug */,
-				127BA2522BBB09F10055CB61 /* Release */,
+				129323852BBBC5790088424C /* Debug */,
+				129323862BBBC5790088424C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
