@@ -1,9 +1,7 @@
 package racingcar.domain
 
-import racingcar.Car
-
 class Jugdement {
-    fun winner(cars: List<racingcar.Car>): List<Car> {
+    fun winner(cars: List<racingcar.domain.Car>): List<racingcar.domain.Car> {
         val maxPosition = cars.maxOf { it.position }
         return cars.filter{car -> car.position == maxPosition }
 //        val answer = mutableListOf<String>()
