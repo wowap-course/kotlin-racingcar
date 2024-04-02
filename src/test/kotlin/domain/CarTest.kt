@@ -18,5 +18,13 @@ class CarTest {
         assertThrows<IllegalArgumentException> { Car("abcdef") }
     }
 
-
+    @Test
+    fun `자동차는 4이상일 때 움직인다`() {
+        // given
+        val car = Car("abc")
+        // when
+        car.move()
+        // then
+        assertThat(car.position).isEqualTo(1)
+    }
 }
