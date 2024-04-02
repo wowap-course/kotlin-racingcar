@@ -10,14 +10,17 @@ import XCTest
 
 final class CarTest: XCTestCase {
     
-//    func test_자동차는_이름을_가짐() throws{
-//        XCTAssertThrowsError(try Car(name: "Testtss"))
-//    }
-    
     func test_자동차는_이름을_가짐() throws{
+        XCTAssertNoThrow(try Car(name: "김민석"))
+    }
+    
+    func test_자동차는_6글자_이상의_이름을_가지지_않음() throws{
         XCTAssertThrowsError(try Car(name: "Testtss"))
     }
-
+    
+    func test_자동차는_공백으로_입력으로_받지않음() throws{
+        XCTAssertThrowsError(try Car(name: "  "))
+    }
 
     func test_자동차_움직임_테스트() throws{
         let testCar = try Car(name:"Test")
