@@ -1,4 +1,4 @@
-package domain
+package racingcar.domain
 
 class Judgement {
     fun judgeTheWinner(cars : List<Car>): List<String>{

@@ -1,4 +1,4 @@
-package view
+package racingcar.view
 
 class OutputView {
     fun printPositionOfCar(name: String, position: Int){

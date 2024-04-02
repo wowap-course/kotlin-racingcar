@@ -1,7 +1,7 @@
-package domain
+package racingcar.domain
 
-import view.InputView
-import view.OutputView
+import racingcar.view.InputView
+import racingcar.view.OutputView
 
 class GameController(
     private val inputView: InputView,
