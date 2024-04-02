@@ -1,7 +1,7 @@
 package racingcar.domain
 
-class Car(val name: String, initPosition: Int = 0) {
-    var position: Int = initPosition
+class Car(val name: String, position: Int = 0) {
+    var position: Int = position
         private set
 
     init {
