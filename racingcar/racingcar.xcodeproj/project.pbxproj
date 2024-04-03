@@ -23,6 +23,12 @@
 		12FC12822BBDA88C00CD2F86 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */; };
 		12FC12832BBDAA1B00CD2F86 /* NumberGeneator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */; };
 		12FC12842BBDAA1B00CD2F86 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */; };
+		12FC12862BBDAA7C00CD2F86 /* MoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */; };
+		12FC12882BBDAADD00CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
+		12FC128A2BBDABB400CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
+		12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */; };
+		12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
+		12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,9 @@
 		12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveStrategy.swift; sourceTree = "<group>"; };
 		12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGeneator.swift; sourceTree = "<group>"; };
 		12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
+		12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRule.swift; sourceTree = "<group>"; };
+		12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRule.swift; sourceTree = "<group>"; };
+		12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveJustGoRule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,9 @@
 				12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */,
 				12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */,
 				12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */,
+				12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */,
+				12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */,
+				12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -238,6 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */,
+				12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */,
+				12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */,
 				12FC12832BBDAA1B00CD2F86 /* NumberGeneator.swift in Sources */,
 				12FC12842BBDAA1B00CD2F86 /* RandomNumberGenerator.swift in Sources */,
 				12FC127E2BBDA6E900CD2F86 /* MoveStrategy.swift in Sources */,
@@ -252,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FC12882BBDAADD00CD2F86 /* MoveFourHighRule.swift in Sources */,
 				12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */,
+				12FC128A2BBDABB400CD2F86 /* MoveJustGoRule.swift in Sources */,
 				127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */,
 				127BA23F2BBA9E220055CB61 /* InputView.swift in Sources */,
 				12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */,
@@ -260,6 +277,7 @@
 				12FC12802BBDA84D00CD2F86 /* NumberGeneator.swift in Sources */,
 				127BA2452BBAFEDE0055CB61 /* OutputView.swift in Sources */,
 				12FC127D2BBDA58000CD2F86 /* MoveStrategy.swift in Sources */,
+				12FC12862BBDAA7C00CD2F86 /* MoveRule.swift in Sources */,
 				12FC12822BBDA88C00CD2F86 /* RandomNumberGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

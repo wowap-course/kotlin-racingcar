@@ -9,15 +9,15 @@ import Foundation
 
 class MoveStrategy{
     private let numberGenerator: NumberGeneator
+    private let moveRule : MoveRule
     
-    init(numberGenerator : NumberGeneator){
+    init(numberGenerator : NumberGeneator, moveRule : MoveRule){
         self.numberGenerator = numberGenerator
+        self.moveRule = moveRule
     }
     
     func canMove() -> Bool{
-        let randomNumber = numberGenerator.getNumber()
-        return randomNumber <= RANDOM_CONDITION
+        return moveRule.canMove(number: numberGenerator.getNumber())
     }
     
-    private let RANDOM_CONDITION = 4
 }
