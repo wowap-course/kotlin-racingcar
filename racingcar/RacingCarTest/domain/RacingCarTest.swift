@@ -29,7 +29,7 @@ final class CarTest: XCTestCase {
         XCTAssertEqual(testCar.position, beforePosition + 1)
     }
     
-    func test_자동차는_무조건_움직인다() throws{
+    func test_자동차는_움직임_규칙중_무조건_움직일_수_있다() throws{
         let testCar = try Car(name:"Test",moveStrategy: MoveStrategy(numberGenerator: RandomNumberGenerator(), moveRule: MoveJustGoRule()))
         let beforePosition = testCar.position
         XCTAssertNoThrow(testCar.go()) // go() 메서드 호출 시 예외가 발생하지 않는지 확인

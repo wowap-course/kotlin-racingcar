@@ -30,6 +30,7 @@
 		12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
 		12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
 		12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */; };
+		12FC12932BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRule.swift; sourceTree = "<group>"; };
 		12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveJustGoRule.swift; sourceTree = "<group>"; };
 		12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGeneratorTest.swift; sourceTree = "<group>"; };
+		12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRuleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */,
 				129323832BBBC5790088424C /* RacingCarTest.swift */,
 				12D163112BBBCABD004FBFBA /* RefereeTest.swift */,
+				12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FC12932BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift in Sources */,
 				12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */,
 				12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */,
 				12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */,
