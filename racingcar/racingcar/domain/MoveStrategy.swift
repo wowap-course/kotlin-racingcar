@@ -9,11 +9,11 @@ import Foundation
 
 class MoveStrategy{
     func canMove() -> Bool{
-        let randomNumber = Int.random(in: minRandomNumber...maxRandomNumber)
-        return randomNumber <= randomCondition
+        let randomNumber = Int.random(in: MIN_RANDOM_NUMBER...MAX_RANDOM_NUMBER)
+        return randomNumber <= RANDOM_CONDITION
     }
     
-    private let minRandomNumber = 0
-    private let maxRandomNumber = 9
-    private let randomCondition = 4
+    private let MIN_RANDOM_NUMBER = 0
+    private let MAX_RANDOM_NUMBER = 9
+    private let RANDOM_CONDITION = 4
 }

@@ -21,7 +21,7 @@ class Car {
         self.moveStrategy = moveStrategy
         
         // 이름이 기준에서 넘거나 빈 문자열로 들어온 경우 예외처리
-        if !(Car.minNameLength...Car.maxNameLength).contains(name.count) || name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+        if !(MIN_NAME_LENGTH...MAX_NAME_LENGTH).contains(name.count) || name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             throw CarInputError.invalidArgumentException
         }
     }
@@ -32,6 +32,6 @@ class Car {
         }
     }
     
-    static let minNameLength = 1
-    static let maxNameLength = 5
+    private let MIN_NAME_LENGTH = 1
+    private let MAX_NAME_LENGTH = 5
 }
