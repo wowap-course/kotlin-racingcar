@@ -25,15 +25,14 @@ class GameController(
 
     private fun playGame(repeatInput: Int, cars: List<Car>) {
         repeat(repeatInput) {
-            round(cars)
+            playOneRound(cars)
         }
     }
 
-    private fun round(cars: List<Car>) {
+    private fun playOneRound(cars: List<Car>) {
         cars.forEach { car ->
-            car.move()
+            car.go()
             outputView.printCarMove(car.name, car.position)
         }
     }
 }
-
