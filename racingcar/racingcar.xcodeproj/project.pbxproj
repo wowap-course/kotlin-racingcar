@@ -29,6 +29,7 @@
 		12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */; };
 		12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
 		12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
+		12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRule.swift; sourceTree = "<group>"; };
 		12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRule.swift; sourceTree = "<group>"; };
 		12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveJustGoRule.swift; sourceTree = "<group>"; };
+		12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGeneratorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		12D163102BBBC9FC004FBFBA /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */,
 				129323832BBBC5790088424C /* RacingCarTest.swift */,
 				12D163112BBBCABD004FBFBA /* RefereeTest.swift */,
 			);
@@ -259,6 +262,7 @@
 				12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */,
 				12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */,
 				12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */,
+				12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */,
 				129323842BBBC5790088424C /* RacingCarTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
