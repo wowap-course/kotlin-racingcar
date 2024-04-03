@@ -9,7 +9,7 @@ class CarTest {
     @Test
     fun `자동차는 이름을 가진다`() {
         val car = Car("aabc")
-        assertThat(car.name).isEqualTo("avcc")
+        assertThat(car.name).isEqualTo("aabc")
     }
 
     @Test
