@@ -24,7 +24,8 @@ final class CarTest: XCTestCase {
 
     func test_자동차_움직임_테스트() throws{
         let testCar = try Car(name:"Test")
+        let beforePosition = testCar.position
         XCTAssertNoThrow(testCar.go()) // go() 메서드 호출 시 예외가 발생하지 않는지 확인
-        XCTAssertEqual(testCar.position, 1)
+        XCTAssertEqual(testCar.position, beforePosition + 1)
     }
 }
