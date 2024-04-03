@@ -9,14 +9,13 @@ class JudgmentTest {
     @Test
     fun `심판은 자동차의 위치가 가장 많은 우승자들을 판별할 수 있다`() {
         // given
-        val judgment = Jugdement()
-        val car1 = Car("aaa", 1)
-        val car2 = Car("bbb", 2)
+        val judgement = Jugdement()
+        val cars = listOf(Car("aaa", 1), Car("bbb", 2))
 
         // when
-        val winners = judgment.winner(listOf(car1, car2))
+        val winners = judgement.setWinner(cars)
 
         // then
-        assertThat(winners).containsExactly(car2)
+        assertThat(winners).containsExactly(cars[1])
     }
 }
