@@ -1,5 +1,4 @@
 package domain
-
 class Car(name: List<String>?, val times: Int) {
     //이름 5글자 넘거나 공백 포함시 오류
     val name: List<String> = name?.filter { it.isNotBlank() }?.map {
