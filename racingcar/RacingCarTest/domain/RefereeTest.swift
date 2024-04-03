@@ -12,8 +12,8 @@ final class RefereeTest: XCTestCase {
     func test_심판은_우승자들을_판별할_수_있다() throws{
         // given
         let Referee = Referee()
-        let Car1 = try Car(name: "car1",position: 1,moveStrategy: MoveStrategy())
-        let Car2 = try Car(name: "car2",position: 2,moveStrategy: MoveStrategy())
+        let Car1 = try Car(name: "car1",position: 1,moveStrategy: MoveStrategy(numberGenerator: RandomNumberGenerator()))
+        let Car2 = try Car(name: "car2",position: 2,moveStrategy: MoveStrategy(numberGenerator: RandomNumberGenerator()))
         
         // when
         let winners = Referee.findWinners(cars: [Car1,Car2])

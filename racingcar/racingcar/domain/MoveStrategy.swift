@@ -8,12 +8,16 @@
 import Foundation
 
 class MoveStrategy{
+    private let numberGenerator: NumberGeneator
+    
+    init(numberGenerator : NumberGeneator){
+        self.numberGenerator = numberGenerator
+    }
+    
     func canMove() -> Bool{
-        let randomNumber = Int.random(in: MIN_RANDOM_NUMBER...MAX_RANDOM_NUMBER)
+        let randomNumber = numberGenerator.getNumber()
         return randomNumber <= RANDOM_CONDITION
     }
     
-    private let MIN_RANDOM_NUMBER = 0
-    private let MAX_RANDOM_NUMBER = 9
     private let RANDOM_CONDITION = 4
 }

@@ -41,7 +41,7 @@ class RacingGameController {
         for name in names {
             // 자동차 이름 cars 리스트에 넣기(예외처리도 진행)
             do {
-                let car = try Car(name: name,moveStrategy: MoveStrategy())
+                let car = try Car(name: name,moveStrategy: MoveStrategy(numberGenerator: RandomNumberGenerator()))
                 cars.append(car)
             } catch {
                 throw error
