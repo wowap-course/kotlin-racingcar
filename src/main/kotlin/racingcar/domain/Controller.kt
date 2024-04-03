@@ -11,9 +11,9 @@ class GameController(
 ) {
     fun start() {
         val cars = createCars()
-        val repeatInput = roundCount()
-        game(repeatInput, cars)
-        val winners = Jugdement().winner(cars)
+        val raceTime = inputView.inputRaceTime()
+        playGame(raceTime, cars)
+        val winners = Jugdement().setWinner(cars)
         outputView.printWinnersName(winners.map { car -> car.name })
 
     }
@@ -23,12 +23,7 @@ class GameController(
         return names.map { name -> Car(name) }
     }
 
-    private fun roundCount(): Int {
-        val repeatInput = inputView.inputRoundCount()
-        return repeatInput
-    }
-
-    private fun game(repeatInput: Int, cars: List<Car>) {
+    private fun playGame(repeatInput: Int, cars: List<Car>) {
         repeat(repeatInput) {
             round(cars)
         }
