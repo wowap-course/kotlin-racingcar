@@ -13,10 +13,12 @@ import Foundation
 class Car {
     private(set) var name: String
     var position = 0
+    let moveStrategy : MoveStrategy
     
-    init(name: String, position: Int = 0) throws {
+    init(name: String, position: Int = 0, moveStrategy: MoveStrategy) throws {
         self.name = name
         self.position = position
+        self.moveStrategy = moveStrategy
         
         // 이름이 기준에서 넘거나 빈 문자열로 들어온 경우 예외처리
         if !(Car.minNameLength...Car.maxNameLength).contains(name.count) || name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
@@ -25,15 +27,11 @@ class Car {
     }
 
     func go() {
-        let randomNumber = Int.random(in: Car.minRandomNumber...Car.maxRandomNumber)
-        if (randomNumber <= Car.randomCondition) {
+        if(moveStrategy.canMove()){
             position += 1
         }
     }
     
     static let minNameLength = 1
     static let maxNameLength = 5
-    static let minRandomNumber = 0
-    static let maxRandomNumber = 9
-    static let randomCondition = 4
 }
