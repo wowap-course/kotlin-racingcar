@@ -5,7 +5,7 @@ class Car(val name: String, initPosition: Int = 0) {
         private set
 
     init {
-        if (name.length > MAX_NAME_LENGTH) throw IllegalArgumentException()
+        require(name.length in MiN_NAME_LENGTH.. MAX_NAME_LENGTH)
     }
 
     fun go() {
@@ -16,6 +16,7 @@ class Car(val name: String, initPosition: Int = 0) {
     }
 
     companion object {
+        private const val MiN_NAME_LENGTH = 1
         private const val MAX_NAME_LENGTH = 5
         private const val MIN_RANDOM_NUMBER = 0
         private const val MAX_RANDOM_NUMBER = 9
