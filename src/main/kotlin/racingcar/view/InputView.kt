@@ -7,7 +7,6 @@ class InputView(){
     }
 
     fun inputRoundCount(): Int{
-        // 시도하는 횟수를 받아내기
         println("시도할 횟수는 몇 회인가요?")
         return readln().toInt()
     }
