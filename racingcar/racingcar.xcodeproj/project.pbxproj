@@ -31,6 +31,7 @@
 		12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
 		12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */; };
 		12FC12932BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */; };
+		12FC129A2BBDB5CA00CD2F86 /* RacingGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2462BBB00F20055CB61 /* RacingGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,12 +101,9 @@
 				12ED77B72BB2F4AC00CAFF16 /* Car.swift */,
 				127BA2402BBAF95F0055CB61 /* Referee.swift */,
 				127BA2462BBB00F20055CB61 /* RacingGameController.swift */,
+				12FC12972BBDB31E00CD2F86 /* NumberGenerator */,
+				12FC12952BBDB26600CD2F86 /* MoveRule */,
 				12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */,
-				12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */,
-				12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */,
-				12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */,
-				12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */,
-				12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -164,6 +162,25 @@
 				12ED77B02BB2F45D00CAFF16 /* main.swift */,
 			);
 			path = racingcar;
+			sourceTree = "<group>";
+		};
+		12FC12952BBDB26600CD2F86 /* MoveRule */ = {
+			isa = PBXGroup;
+			children = (
+				12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */,
+				12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */,
+				12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */,
+			);
+			path = MoveRule;
+			sourceTree = "<group>";
+		};
+		12FC12972BBDB31E00CD2F86 /* NumberGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */,
+				12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */,
+			);
+			path = NumberGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +283,7 @@
 				12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */,
 				12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */,
 				12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */,
+				12FC129A2BBDB5CA00CD2F86 /* RacingGameController.swift in Sources */,
 				12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */,
 				129323842BBBC5790088424C /* RacingCarTest.swift in Sources */,
 			);

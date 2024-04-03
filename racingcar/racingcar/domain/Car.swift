@@ -35,3 +35,4 @@ class Car {
     private let MIN_NAME_LENGTH = 1
     private let MAX_NAME_LENGTH = 5
 }
+ 
