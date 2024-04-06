@@ -7,10 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1280034B2BB32D8E00A9436B /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280034A2BB32D8E00A9436B /* GamePlay.swift */; };
+		127BA23F2BBA9E220055CB61 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA23E2BBA9E220055CB61 /* InputView.swift */; };
+		127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
+		127BA2452BBAFEDE0055CB61 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2442BBAFEDE0055CB61 /* OutputView.swift */; };
+		127BA2472BBB00F20055CB61 /* RacingGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2462BBB00F20055CB61 /* RacingGameController.swift */; };
+		129323842BBBC5790088424C /* RacingCarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129323832BBBC5790088424C /* RacingCarTest.swift */; };
+		12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
+		12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2402BBAF95F0055CB61 /* Referee.swift */; };
+		12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D163112BBBCABD004FBFBA /* RefereeTest.swift */; };
 		12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B02BB2F45D00CAFF16 /* main.swift */; };
 		12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED77B72BB2F4AC00CAFF16 /* Car.swift */; };
+		12FC127D2BBDA58000CD2F86 /* MoveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */; };
+		12FC127E2BBDA6E900CD2F86 /* MoveStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */; };
+		12FC12802BBDA84D00CD2F86 /* NumberGeneator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */; };
+		12FC12822BBDA88C00CD2F86 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */; };
+		12FC12832BBDAA1B00CD2F86 /* NumberGeneator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */; };
+		12FC12842BBDAA1B00CD2F86 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */; };
+		12FC12862BBDAA7C00CD2F86 /* MoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */; };
+		12FC12882BBDAADD00CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
+		12FC128A2BBDABB400CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
+		12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */; };
+		12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */; };
+		12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */; };
+		12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */; };
+		12FC12932BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */; };
+		12FC129A2BBDB5CA00CD2F86 /* RacingGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BA2462BBB00F20055CB61 /* RacingGameController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D1630B2BBBC68A004FBFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12ED77A52BB2F45D00CAFF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12ED77AC2BB2F45D00CAFF16;
+			remoteInfo = racingcar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		12ED77AB2BB2F45D00CAFF16 /* CopyFiles */ = {
@@ -25,13 +57,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1280034A2BB32D8E00A9436B /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
+		127BA23E2BBA9E220055CB61 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		127BA2402BBAF95F0055CB61 /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
+		127BA2442BBAFEDE0055CB61 /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		127BA2462BBB00F20055CB61 /* RacingGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGameController.swift; sourceTree = "<group>"; };
+		129323812BBBC5790088424C /* RacingCarTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacingCarTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		129323832BBBC5790088424C /* RacingCarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingCarTest.swift; sourceTree = "<group>"; };
+		12D163112BBBCABD004FBFBA /* RefereeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefereeTest.swift; sourceTree = "<group>"; };
 		12ED77AD2BB2F45D00CAFF16 /* racingcar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = racingcar; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ED77B02BB2F45D00CAFF16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		12ED77B72BB2F4AC00CAFF16 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveStrategy.swift; sourceTree = "<group>"; };
+		12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGeneator.swift; sourceTree = "<group>"; };
+		12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
+		12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRule.swift; sourceTree = "<group>"; };
+		12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRule.swift; sourceTree = "<group>"; };
+		12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveJustGoRule.swift; sourceTree = "<group>"; };
+		12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGeneratorTest.swift; sourceTree = "<group>"; };
+		12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFourHighRuleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1293237E2BBBC5790088424C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12ED77AA2BB2F45D00CAFF16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +95,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		127BA23C2BBA9D450055CB61 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				12ED77B72BB2F4AC00CAFF16 /* Car.swift */,
+				127BA2402BBAF95F0055CB61 /* Referee.swift */,
+				127BA2462BBB00F20055CB61 /* RacingGameController.swift */,
+				12FC12972BBDB31E00CD2F86 /* NumberGenerator */,
+				12FC12952BBDB26600CD2F86 /* MoveRule */,
+				12FC127C2BBDA58000CD2F86 /* MoveStrategy.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		127BA23D2BBA9D4C0055CB61 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				127BA23E2BBA9E220055CB61 /* InputView.swift */,
+				127BA2442BBAFEDE0055CB61 /* OutputView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		129323822BBBC5790088424C /* RacingCarTest */ = {
+			isa = PBXGroup;
+			children = (
+				12D163102BBBC9FC004FBFBA /* domain */,
+			);
+			path = RacingCarTest;
+			sourceTree = "<group>";
+		};
+		12D163102BBBC9FC004FBFBA /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				12FC12902BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift */,
+				129323832BBBC5790088424C /* RacingCarTest.swift */,
+				12D163112BBBCABD004FBFBA /* RefereeTest.swift */,
+				12FC12922BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 		12ED77A42BB2F45D00CAFF16 = {
 			isa = PBXGroup;
 			children = (
 				12ED77AF2BB2F45D00CAFF16 /* racingcar */,
+				129323822BBBC5790088424C /* RacingCarTest */,
 				12ED77AE2BB2F45D00CAFF16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				12ED77AD2BB2F45D00CAFF16 /* racingcar */,
+				129323812BBBC5790088424C /* RacingCarTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,16 +157,53 @@
 		12ED77AF2BB2F45D00CAFF16 /* racingcar */ = {
 			isa = PBXGroup;
 			children = (
+				127BA23D2BBA9D4C0055CB61 /* view */,
+				127BA23C2BBA9D450055CB61 /* domain */,
 				12ED77B02BB2F45D00CAFF16 /* main.swift */,
-				12ED77B72BB2F4AC00CAFF16 /* Car.swift */,
-				1280034A2BB32D8E00A9436B /* GamePlay.swift */,
 			);
 			path = racingcar;
+			sourceTree = "<group>";
+		};
+		12FC12952BBDB26600CD2F86 /* MoveRule */ = {
+			isa = PBXGroup;
+			children = (
+				12FC12852BBDAA7C00CD2F86 /* MoveRule.swift */,
+				12FC12872BBDAADD00CD2F86 /* MoveFourHighRule.swift */,
+				12FC12892BBDABB400CD2F86 /* MoveJustGoRule.swift */,
+			);
+			path = MoveRule;
+			sourceTree = "<group>";
+		};
+		12FC12972BBDB31E00CD2F86 /* NumberGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				12FC127F2BBDA84D00CD2F86 /* NumberGeneator.swift */,
+				12FC12812BBDA88C00CD2F86 /* RandomNumberGenerator.swift */,
+			);
+			path = NumberGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		129323802BBBC5790088424C /* RacingCarTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 129323872BBBC5790088424C /* Build configuration list for PBXNativeTarget "RacingCarTest" */;
+			buildPhases = (
+				1293237D2BBBC5790088424C /* Sources */,
+				1293237E2BBBC5790088424C /* Frameworks */,
+				1293237F2BBBC5790088424C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D1630C2BBBC68A004FBFBA /* PBXTargetDependency */,
+			);
+			name = RacingCarTest;
+			productName = RacingCarTest;
+			productReference = 129323812BBBC5790088424C /* RacingCarTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		12ED77AC2BB2F45D00CAFF16 /* racingcar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12ED77B42BB2F45D00CAFF16 /* Build configuration list for PBXNativeTarget "racingcar" */;
@@ -98,6 +231,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					129323802BBBC5790088424C = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					12ED77AC2BB2F45D00CAFF16 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -117,24 +253,112 @@
 			projectRoot = "";
 			targets = (
 				12ED77AC2BB2F45D00CAFF16 /* racingcar */,
+				129323802BBBC5790088424C /* RacingCarTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1293237F2BBBC5790088424C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1293237D2BBBC5790088424C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FC12932BBDB01D00CD2F86 /* MoveFourHighRuleTest.swift in Sources */,
+				12FC128B2BBDABF300CD2F86 /* MoveRule.swift in Sources */,
+				12FC128C2BBDABF300CD2F86 /* MoveFourHighRule.swift in Sources */,
+				12FC128D2BBDABF300CD2F86 /* MoveJustGoRule.swift in Sources */,
+				12FC12832BBDAA1B00CD2F86 /* NumberGeneator.swift in Sources */,
+				12FC12842BBDAA1B00CD2F86 /* RandomNumberGenerator.swift in Sources */,
+				12FC127E2BBDA6E900CD2F86 /* MoveStrategy.swift in Sources */,
+				12D1630E2BBBC80A004FBFBA /* Referee.swift in Sources */,
+				12D1630D2BBBC7CD004FBFBA /* Car.swift in Sources */,
+				12D163122BBBCABD004FBFBA /* RefereeTest.swift in Sources */,
+				12FC129A2BBDB5CA00CD2F86 /* RacingGameController.swift in Sources */,
+				12FC12912BBDAE8B00CD2F86 /* RandomNumberGeneratorTest.swift in Sources */,
+				129323842BBBC5790088424C /* RacingCarTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12ED77A92BB2F45D00CAFF16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FC12882BBDAADD00CD2F86 /* MoveFourHighRule.swift in Sources */,
 				12ED77B82BB2F4AC00CAFF16 /* Car.swift in Sources */,
+				12FC128A2BBDABB400CD2F86 /* MoveJustGoRule.swift in Sources */,
+				127BA2412BBAF95F0055CB61 /* Referee.swift in Sources */,
+				127BA23F2BBA9E220055CB61 /* InputView.swift in Sources */,
 				12ED77B12BB2F45D00CAFF16 /* main.swift in Sources */,
-				1280034B2BB32D8E00A9436B /* GamePlay.swift in Sources */,
+				127BA2472BBB00F20055CB61 /* RacingGameController.swift in Sources */,
+				12FC12802BBDA84D00CD2F86 /* NumberGeneator.swift in Sources */,
+				127BA2452BBAFEDE0055CB61 /* OutputView.swift in Sources */,
+				12FC127D2BBDA58000CD2F86 /* MoveStrategy.swift in Sources */,
+				12FC12862BBDAA7C00CD2F86 /* MoveRule.swift in Sources */,
+				12FC12822BBDA88C00CD2F86 /* RandomNumberGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		12D1630C2BBBC68A004FBFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12ED77AC2BB2F45D00CAFF16 /* racingcar */;
+			targetProxy = 12D1630B2BBBC68A004FBFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		129323852BBBC5790088424C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34X3BT977M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.RacingCarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		129323862BBBC5790088424C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34X3BT977M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minseok.RacingCarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		12ED77B22BB2F45D00CAFF16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -172,6 +396,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -235,6 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -259,8 +485,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34X3BT977M;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = racingcar;
 				SWIFT_VERSION = 5.0;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Debug;
 		};
@@ -270,14 +497,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34X3BT977M;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = racingcar;
 				SWIFT_VERSION = 5.0;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		129323872BBBC5790088424C /* Build configuration list for PBXNativeTarget "RacingCarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129323852BBBC5790088424C /* Debug */,
+				129323862BBBC5790088424C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		12ED77A82BB2F45D00CAFF16 /* Build configuration list for PBXProject "racingcar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
