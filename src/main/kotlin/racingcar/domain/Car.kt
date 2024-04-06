@@ -1,16 +1,15 @@
 package racingcar.domain
 
-class Car(val name: String, initPosition: Int = 0) {
-    var position: Int = initPosition
+class Car(val name: String, position: Int = 0) {
+    var position: Int = position
         private set
 
     init {
         require(name.length in MIN_NAME_LENGTH..MAX_NAME_LENGTH)
     }
 
-    fun go() {
-        val randomNumber = (MIN_RANDOM_NUMBER..MAX_RANDOM_NUMBER).random()
-        if (randomNumber >= RANDOM_CONDITION) {
+    fun move(moveStrategy: MoveStrategy) {
+        if (moveStrategy.canMove()) {
             position++
         }
     }
@@ -18,8 +17,5 @@ class Car(val name: String, initPosition: Int = 0) {
     companion object {
         private const val MIN_NAME_LENGTH = 1
         private const val MAX_NAME_LENGTH = 5
-        private const val MIN_RANDOM_NUMBER = 0
-        private const val MAX_RANDOM_NUMBER = 9
-        private const val RANDOM_CONDITION = 4
     }
 }
