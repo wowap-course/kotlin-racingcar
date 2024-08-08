@@ -1,4 +1,4 @@
-package racingcar.domain
+package racingcar.model
 
 class Judgment {
     fun judgeWinners(cars: List<Car>): List<Car> {

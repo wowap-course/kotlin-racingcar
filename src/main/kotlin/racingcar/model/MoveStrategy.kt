@@ -1,7 +1,7 @@
-package racingcar.domain
+package racingcar.model
 
-import racingcar.domain.moverule.MoveRule
-import racingcar.domain.numbergenerator.NumberGenerator
+import racingcar.model.moverule.MoveRule
+import racingcar.model.numbergenerator.NumberGenerator
 
 class MoveStrategy(
     private val moveRule: MoveRule,

@@ -1,6 +1,5 @@
 package racingcar
 
-import racingcar.domain.GameController
 import racingcar.view.InputView
 import racingcar.view.OutputView
 

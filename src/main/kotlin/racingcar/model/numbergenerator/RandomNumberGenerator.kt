@@ -1,4 +1,4 @@
-package racingcar.domain.numbergenerator
+package racingcar.model.numbergenerator
 
 class RandomNumberGenerator : NumberGenerator {
     override fun getNumber(): Int {

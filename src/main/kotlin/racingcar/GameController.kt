@@ -1,7 +1,10 @@
-package racingcar.domain
+package racingcar
 
-import racingcar.domain.moverule.FourOrMoreMoveRule
-import racingcar.domain.numbergenerator.RandomNumberGenerator
+import racingcar.model.Car
+import racingcar.model.Judgment
+import racingcar.model.MoveStrategy
+import racingcar.model.moverule.FourOrMoreMoveRule
+import racingcar.model.numbergenerator.RandomNumberGenerator
 import racingcar.view.InputView
 import racingcar.view.OutputView
 

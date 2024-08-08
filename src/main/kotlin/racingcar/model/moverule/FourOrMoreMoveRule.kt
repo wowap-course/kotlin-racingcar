@@ -1,4 +1,4 @@
-package racingcar.domain.moverule
+package racingcar.model.moverule
 
 class FourOrMoreMoveRule : MoveRule {
     override fun canMove(number: Int) = number >= MOVE_CONDITION

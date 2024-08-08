@@ -1,12 +1,12 @@
-package racingcar.domain
+package racingcar.model
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource
-import racingcar.domain.moverule.FourOrMoreMoveRule
-import racingcar.domain.numbergenerator.NumberGenerator
+import racingcar.model.moverule.FourOrMoreMoveRule
+import racingcar.model.numbergenerator.NumberGenerator
 
 class CarTest {
 
